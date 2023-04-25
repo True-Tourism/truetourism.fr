@@ -1,7 +1,11 @@
-.hidden {
+html {
+    scroll-behavior: smooth;
+}
+
+.animated-hidden {
     opacity: 0;
     filter(blur(10px));
-    transform: translateY(-100px);
+    transform: translateY(-80px);
     transition: all 800ms;
 }
 
