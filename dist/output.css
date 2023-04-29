@@ -2020,6 +2020,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-\[20\] {
+  padding-left: 20;
+  padding-right: 20;
+}
+
+.px-px {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2124,6 +2139,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -2247,6 +2266,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 179 130 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(33 188 129 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2663,6 +2692,11 @@ p , h2{
 }
 
 @media (min-width: 768px) {
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2675,8 +2709,20 @@ p , h2{
     flex-direction: row;
   }
 
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 }
 
