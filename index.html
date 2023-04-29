@@ -3,108 +3,127 @@
 
 <head>
     <title>True Tourism - La bonne façon de visiter</title>
-    <meta name="description" content="La nouvelle application de tourisme entre particuliers centrée sur Marseille, qui propose des visites touristiques menées par des guides locaux passionnés.">
-    <meta name="keywords" content="tourisme, marseille, visite, guide, local, passionné, application, mobile, android, ios, apple, google, play, store, app, store">
+    <meta name="description"
+          content="La nouvelle application de tourisme entre particuliers centrée sur Marseille, qui propose des visites touristiques menées par des guides locaux passionnés.">
+    <meta name="keywords"
+          content="tourisme, marseille, visite, guide, local, passionné, application, mobile, android, ios, apple, google, play, store, app, store">
     <meta name="author" content="True Tourism">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="theme-color" content="#21BC81">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <link href="dist/output.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
 
     <script defer src="js/animation.js"></script>
-    <style>
-        /* Custom styles */
-        .bg-main {
-            background-color: #21BC81;
-        }
-        .bg-secondary {
-            background-color: #00E5AD;
-        }
-        .bg-alternative {
-            background-color: #000D46;
-        }
-        .text-details {
-            color: #F1A34F;
-        }
-    </style>
 </head>
-
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-<header class="bg-main py-4">
+<header class="bg-primary py-4">
     <div class="container mx-auto flex justify-between items-center px-6">
-        <a class="text-2xl font-bold text-white" href="#">True Tourism</a>
+        <a class="text-2xl font-bold text-white">TRUE TOURISM</a>
         <nav>
             <ul class="flex">
-                <li><a class="text-white hover:text-details text-lg px-4" href="#">Contact</a></li>
+                <li><a class="text-white hover:text-details text-lg px-4" href="mailto:communication@truetourism.fr">CONTACT</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
-<section class="container mx-auto my-10 px-6">
+<section class="container my-10 mx-auto mr-0">
     <div class="flex flex-wrap items-center">
-        <div class="w-full md:w-1/2">
-            <h1 class="text-5xl font-bold leading-tight text-secondary mb-2">True Tourism</h1>
-            <p class="text-gray-700 text-xl mb-8">La nouvelle application de tourisme entre particuliers centrée sur Marseille, qui propose des visites touristiques menées par des guides locaux passionnés.</p>
-            <!--<div class="flex">
-                <a href="#" class="inline-block py-4 px-8 leading-none text-white bg-secondary hover:bg-blue-900 font-bold rounded shadow">App Store</a>
-                <a href="#" class="ml-4 inline-block py-4 px-8 leading-none text-white bg-secondary hover:bg-blue-900 font-bold rounded shadow">Play Store</a>
-            </div>-->
+        <div class="w-full md:w-1/2 justify-center px-12">
+            <div class="flex justify-center">
+                <img class="object-center" src="assets/true_tourism_logo.svg" alt="True Tourism Logo">
+            </div>
+            <p class="text-gray-700 text-xl py-2">
+                True Tourism, c’est la nouvelle application de tourisme entre particuliers centrée sur Marseille, qui
+                propose des visites touristiques menées par des guides locaux passionnés.
+            </p>
+            <div class="flex flex-col justify-center items-center pb-12">
+                <p class="text-gray-700 text-xl py-2">Bientôt disponible</p>
+                <div class="flex justify-center">
+                    <img class="h-12 w-12 mx-2" src="assets/apple.svg">
+                    <img class="h-12 w-12 mx-2" src="assets/android.svg">
+                </div>
+            </div>
         </div>
-        <div class="w-full md:w-1/2">
-            <img class="mx-auto" src="assets/logo.png" alt="True Tourism App Logo">
+        <div class="w-full md:w-1/2 justify-end">
+            <img src="assets/illustration_mobile.png">
         </div>
     </div>
 </section>
 
-<section class="bg-gray-200 py-8">
+<section class="bg-primary py-8" >
     <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800 animated-hidden">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Qui sommes-nous ?</h2>
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full">Qui sommes-nous ?</h2>
         <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
 
-        <div class="flex flex-col justify-center items-center pt-12 my-12 sm:my-4">
+        <div class="flex flex-col justify-center items-center pt-8 my-12  sm:my-4">
 
-            <div class="flex flex-col w-5/6 justify-center bg-white shadow-md rounded-lg p-8 my-4 animated-hidden animated-element">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-12 h-12">
-                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                        <path d="M22 4L12 14.01l-3-3"></path>
-                    </svg>
-                </div>
+            <div class="flex flex-row w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 gap-4 animated-hidden animated-element">
+                <img src="assets/heart.svg" class="h-24 w-24 self-center">
                 <div class="flex-grow">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Passionnés de Marseille</h2>
-                    <p class="leading-relaxed text-base">Nous sommes une équipe de passionnés de Marseille, fiers de notre ville et de ses richesses. Nous avons créé True Tourism pour partager notre amour de Marseille avec le monde entier.</p>
+                    <h2 class="text-lg title-font font-medium mb-3">Passionnés de Marseille</h2>
+                    <p class="leading-relaxed text-base">
+                        Nous sommes une entreprise marseillaise fondée par des natifs passionnés par leur ville. Chez
+                        True Tourism, nous sommes fiers de partager notre amour de Marseille avec le monde entier. Nous
+                        croyons en son potentiel et sommes déterminés à contribuer à son expansion. C'est pourquoi nous
+                        proposons des expériences touristiques authentiques et uniques, pour permettre à nos clients de
+                        découvrir notre citée phocéenne.
+                        <br><br>
+                        Nous sommes convaincus que Marseille est une ville à découvrir et nous sommes ravis de pouvoir
+                        vous proposer cette expérience.
+                    </p>
                 </div>
             </div>
 
-            <div class="flex flex-col w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 animated-hidden animated-element">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-12 h-12">
-                        <circle cx="12" cy="5" r="3"></circle>
-                        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                    </svg>
+            <div class="flex flex-row w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 gap-4 animated-hidden animated-element">
+                <div class="self-center">
+                    <div class="h-24 w-24 rounded-full bg-detail  flex justify-center items-center">
+                        <img src="assets/crown.svg" class="h-20 w-20">
+                    </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Des guides locaux expérimentés</h2>
-                    <p class="leading-relaxed text-base">Nos guides sont tous des locaux passionnés et expérimentés, qui connaissent leur ville comme leur poche. Ils sauront vous faire découvrir les recoins les plus secrets de Marseille.</p>
+                    <h2 class="text-lg title-font font-medium mb-3">Des guides locaux expérimentés</h2>
+                    <p class="leading-relaxed text-base">
+                        Nos guides, qu'ils soient particuliers ou professionnels, sont des locaux qui connaissent leur
+                        ville comme leur poche. Ils ont tous choisi de se spécialiser dans un ou plusieurs quartiers ou
+                        thèmes de la ville de Marseille, dans lesquels ils estiment pouvoir partager leurs connaissances
+                        sur des sujets ou des lieux particuliers.
+                        <br><br>
+                        En choisissant True Tourism, vous aurez la chance de découvrir Marseille comme un vrai
+                        Marseillais. Nos guides sont passionnés par leur ville et sont ravis de partager leurs
+                        connaissances avec vous. Ils sauront vous guider dans les rues étroites d'Endoume, vous faire
+                        découvrir les meilleurs calanques de Marseille, et vous montrer les endroits les plus
+                        authentiques de la ville.
+                    </p>
                 </div>
             </div>
 
-            <div class="flex flex-col w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 animated-hidden animated-element">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-12 h-12">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+            <div class="flex flex-row w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 gap-4 animated-hidden animated-element">
+                <div class="self-center">
+                    <div class="h-24 w-24 rounded-full bg-detail  flex justify-center items-center">
+                        <img src="assets/pin.svg" class="h-20 w-20">
+                    </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Des visites touristiques originales</h2>
-                    <p class="leading-relaxed text-base">Nos guides vous feront découvrir les lieux les plus emblématiques de Marseille, mais aussi les recoins les plus secrets de la ville. Vous ne verrez plus jamais Marseille de la même façon.</p>
+                    <h2 class="text-lg title-font font-medium mb-3">Des visites personnalisées et
+                        originales</h2>
+                    <p class="leading-relaxed text-base">
+                        Nos visites guidées sont également personnalisées en fonction de vos centres d'intérêt et de vos
+                        envies. Nous pouvons organiser des visites privées pour les groupes, les familles et les
+                        voyageurs solitaires, ou bien des visites publiques, pour rencontrer des gens qui partagent les
+                        mêmes centres d'intérêt que vous. Nous proposons des circuits thématiques : Historique,
+                        Découverte, Artistique, Spécifique Anecdotique, Ludique, Urbaine.
+                        <br><br>
+                        Chez True Tourism, nous sommes fiers de proposer des visites guidées de qualité supérieure, qui
+                        sont à la fois instructives et amusantes.
+                    </p>
                 </div>
             </div>
 
@@ -112,63 +131,56 @@
     </div>
 </section>
 
+<!-- FAQ
 <section class="bg-gray-100 py-8">
     <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800 animated-hidden">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">FAQ</h2>
         <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
+        <div class="flex flex-col justify-center items-center pt-8 my-12 sm:my-4">
 
-        <div class="flex flex-col justify-center items-center pt-12 my-12 sm:my-4">
-
-        <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
-            <div class="flex flex-wrap w-full">
-                <div class="w-full p-3">
-                    <div class="bg-white shadow-md rounded-lg p-5">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment ça fonctionne ?</h2>
+            <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
+                <div class="flex flex-wrap w-full">
+                    <div class="w-full p-3">
+                        <div class="bg-white shadow-md rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row justify-between items-center">
+                                <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment ça fonctionne ?</h2>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mt-2">Pour utiliser True Tourism, il suffit de
+                                télécharger l'application depuis l'App Store ou le Play Store, et de créer un compte.
+                                Ensuite, vous pouvez parcourir les visites disponibles et réserver celle qui vous
+                                intéresse.</p>
                         </div>
-                        <p class="text-gray-700 leading-relaxed mt-2">Pour utiliser True Tourism, il suffit de télécharger l'application depuis l'App Store ou le Play Store, et de créer un compte. Ensuite, vous pouvez parcourir les visites disponibles et réserver celle qui vous intéresse.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
+                <div class="flex flex-wrap w-full">
+                    <div class="w-full  p-3">
+                        <div class="bg-white shadow-md rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row justify-between items-center">
+                                <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment devenir guide ?</h2>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mt-2">Pour devenir guide, il suffit de créer un
+                                compte sur l'application, et de renseigner les informations sur votre profil. Vous
+                                pouvez ensuite commencer à proposer vos visites sur mesures dans l'application.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
-            <div class="flex flex-wrap w-full">
-                <div class="w-full  p-3">
-                    <div class="bg-white shadow-md rounded-lg p-5">
-                        <div class="flex flex-col md:flex-row justify-between items-center">
-                            <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment devenir guide ?</h2>
-                        </div>
-                        <p class="text-gray-700 leading-relaxed mt-2">Pour devenir guide, il suffit de créer un compte sur l'application, et de renseigner les informations sur votre profil. Vous pouvez ensuite commencer à proposer vos visites sur mesures dans l'application.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
     </div>
 </section>
-
+-->
 <footer class="bg-white">
     <div class="container mx-auto px-8">
-        <div class="w-full flex flex-col md:flex-row py-6 items-center">
-            <div class="flex-1 mb-6 text-black">
-                <a class="text-green-500 no-underline hover:no-underline font-bold text-2xl" href="#">
-                    True Tourism
-                </a>
-            </div>
-            <div class="flex-1">
-                <ul class="mb-4">
-                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-green-500">Contact</a>
-                    </li>
-                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="#" class="no-underline hover:underline text-gray-800 hover:text-green-500">Mentions légales</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="w-full flex flex-col md:flex-row py-6 items-center justify-center">
+            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="mailto:communication@truetourism.fr">Contact</a>
+            <a href="legal.html" class="no-underline hover:underline text-alternative hover:text-green-500 px-8">Mentions
+                légales</a>
         </div>
     </div>
 </footer>
