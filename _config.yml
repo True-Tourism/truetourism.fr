@@ -1,1 +1,3 @@
 baseurl: /truetourism.fr/src
+plugins:
+  - jekyll-seo-tag
