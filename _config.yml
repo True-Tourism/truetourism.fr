@@ -1,4 +1,6 @@
 baseurl: /truetourism.fr/src
+include:
+  - .well-known
 defaults:
   - scope:
       path: ""
