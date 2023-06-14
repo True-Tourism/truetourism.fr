@@ -1,3 +1,8 @@
 baseurl: /truetourism.fr/src
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 plugins:
   - jekyll-seo-tag
