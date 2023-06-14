@@ -35,8 +35,10 @@
 
         gtag('set', 'campaign_name', 'prelaunch');
 
+        var browserLanguage = navigator.language;
 
-        let currentLanguage = 'en';
+
+        let currentLanguage = 'fr';
         function updateContent(language) {
             fetch(`Languages/${language}.json`)
                 .then(response => response.json())
@@ -51,14 +53,13 @@
                     document.querySelector('#Description1').textContent = data.Description1;
                     document.querySelector('#Description2').textContent = data.Description2;
                     document.querySelector('#Description3').textContent = data.Description3;
-
-
                 })
                 .catch(error => console.error('Error fetching JSON:', error));
         }
         function switchLanguage(language) {
             currentLanguage = language;
             updateContent(currentLanguage);
+            console.log(browserLanguage);
         }
         updateContent(currentLanguage);
     </script>
