@@ -36,7 +36,9 @@
         gtag('set', 'campaign_name', 'prelaunch');
 
 
-        let currentLanguage = 'fr';
+        let browserLanguage = navigator.language;
+        let currentLanguage = browserLanguage;
+
         function updateContent(language) {
             fetch(`assets/languages/${language}.json`)
                 .then(response => response.json())
