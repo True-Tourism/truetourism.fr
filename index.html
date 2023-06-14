@@ -38,12 +38,12 @@
 
         let currentLanguage = 'fr';
         function updateContent(language) {
-            fetch(`Languages/${language}.json`)
+            fetch(`assets/languages/${language}.json`)
                 .then(response => response.json())
                 .then(data => {
                     document.querySelector('#headerText').textContent = data.headerText;
                     document.querySelector('#subtitle').textContent = data.subtitle;
-                    document.querySelector('#legal_notice').textContent = data.legal_notice;
+                    document.querySelector('#legal').textContent = data.legal;
                     document.querySelector('#title1').textContent = data.title1;
                     document.querySelector('#title2').textContent =  data.title2;
                     document.querySelector('#title3').textContent =  data.title3;
@@ -252,7 +252,7 @@
         <div class="w-full flex flex-col items-center justify-center py-4">
             <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
                href="mailto:communication@truetourism.fr">Contact</a>
-            <a id="legal_notice" href="legal.html" class="no-underline hover:underline text-alternative hover:text-green-500 px-8">Mentions
+            <a id="legal" href="legal.html" class="no-underline hover:underline text-alternative hover:text-green-500 px-8">Mentions
                 légales</a>
             <button onclick="switchLanguage('fr')" id="frSelect">Français</button>
             <button onclick="switchLanguage('en')" id="enSelect">English</button>
