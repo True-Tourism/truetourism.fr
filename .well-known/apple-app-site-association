@@ -1,0 +1,17 @@
+{
+  "appLinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["fr.truetourism.app"],
+        "components": [
+          {
+            "/": "*",
+          }
+        ]
+      }
+    ]
+  },
+  "webCredentials": {},
+  "appclips": {}
+}
