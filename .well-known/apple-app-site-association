@@ -1,12 +1,11 @@
 {
   "appLinks": {
-    "apps": [],
     "details": [
       {
-        "appIDs": ["fr.truetourism.app"],
+        "appIDs": ["W67J76GCDD.fr.truetourism.app"],
         "components": [
           {
-            "/": "*",
+            "/": "/*",
           }
         ]
       }
