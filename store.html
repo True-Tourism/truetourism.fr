@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Télécharger l'application TrueTourism - La bonne façon de visiter</title>
-    <meta name="description" content="Téléchargez l'application TrueTourism pour visiter Marseille avec les yeux d'un local. Disponible sur Google Play Store et App Store.">
+    <meta name="description"
+          content="Téléchargez l'application TrueTourism pour visiter Marseille avec les yeux d'un local. Disponible sur Google Play Store et App Store.">
 
-    <script>
+    <script defer>
         const UA = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/android/i.test(UA)) {
             window.location.href = 'https://play.google.com/store/apps/details?id=fr.truetourism.app';
-        } else      if (/iPad|iPhone|iPod/i.test(UA) && !window.MSStream) {
+        } else if (/iPad|iPhone|iPod/i.test(UA) && !window.MSStream) {
             window.location.href = 'https://apps.apple.com/fr/app/truetourism/id6449162292?l=fr';
         }
 
+        alert('UA : ' + UA);
         window.location.href = 'https://www.truetourism.fr';
     </script>
 </head>
