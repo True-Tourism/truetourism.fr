@@ -13,10 +13,10 @@
             window.location.href = 'https://play.google.com/store/apps/details?id=fr.truetourism.app';
         } else if (/iPad|iPhone|iPod/i.test(UA) && !window.MSStream) {
             window.location.href = 'https://apps.apple.com/fr/app/truetourism/id6449162292?l=fr';
+        } else {
+            alert('UA: ' + UA);
+            window.location.href = 'https://www.truetourism.fr';
         }
-
-        alert('UA : ' + UA);
-        window.location.href = 'https://www.truetourism.fr';
     </script>
 </head>
 <body>
