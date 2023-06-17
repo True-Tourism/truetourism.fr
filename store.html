@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Télécharger</title>
+
+    <script>
+        const UA = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(UA)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=fr.truetourism.app';
+        } else      if (/iPad|iPhone|iPod/i.test(UA) && !window.MSStream) {
+            window.location.href = 'https://apps.apple.com/fr/app/truetourism/id6449162292?l=fr';
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
