@@ -5,7 +5,7 @@
         "appIDs": ["W67J76GCDD.fr.truetourism.app"],
         "components": [
           {
-            "/": "/*",
+            "/": "/app",
           }
         ]
       }
