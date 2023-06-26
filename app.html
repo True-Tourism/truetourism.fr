@@ -14,32 +14,17 @@
     }
 
     const linker = new DeepLinker({
-        onIgnored: function() {
-            console.log('browser failed to respond to the deep link');
-            alert('browser failed to respond to the deep link');
-            homeRedirection();
-        },
-        onFallback: function() {
-            console.log('dialog hidden or user returned to tab');
-            alert('dialog hidden or user returned to tab');
-            homeRedirection();
-        },
-        onReturn: function() {
-            console.log('user returned to the page from the native app');
-            alert('user returned to the page from the native app');
-            homeRedirection();
-        },
+        onIgnored: homeRedirection,
+        onFallback: homeRedirection,
+        onReturn: homeRedirection
     })
 
-    // Vérifier si un paramètre de redirection est présent dans l'URL
-    const redirectionParam = getParameterByName('redirect');
-    const deepLink = 'true-tourism://app';
-   // console.log('redirection param', redirectionParam);
+    //const redirectionParam = getParameterByName('redirect');
+
+    const deepLink = 'true-tourism://home';
 
     linker.openURL(deepLink); // redirectionParam ? `${deepLink}app/${redirectionParam}` : deepLink);
 
-
-    // Fonction pour obtenir la valeur d'un paramètre dans l'URL
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
