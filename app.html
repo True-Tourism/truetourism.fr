@@ -9,11 +9,6 @@
 </head>
 <body>
 <script defer>
-    // Vérifier si un paramètre de redirection est présent dans l'URL
-    const redirectionParam = getParameterByName('redirect');
-
-    const deepLink = 'true-tourism://';
-
     const homeRedirection = () => {
         window.location.href = 'https://www.truetourism.fr';
     }
@@ -36,9 +31,12 @@
         },
     })
 
-    console.log('redirection param', redirectionParam);
+    // Vérifier si un paramètre de redirection est présent dans l'URL
+    const redirectionParam = getParameterByName('redirect');
+    const deepLink = 'true-tourism://app';
+   // console.log('redirection param', redirectionParam);
 
-    linker.openURL(redirectionParam ? `${deepLink}app/${redirectionParam}` : deepLink);
+    linker.openURL(deepLink); // redirectionParam ? `${deepLink}app/${redirectionParam}` : deepLink);
 
 
     // Fonction pour obtenir la valeur d'un paramètre dans l'URL
