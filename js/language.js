@@ -1,4 +1,14 @@
-let currentLanguage = navigator.language;
+let currentLanguage = 'fr';
+
+function getNavigatorLanguage() {
+    const navigatorLanguage = navigator.language.toLowerCase();
+
+    if(navigatorLanguage.indexOf('-') !== -1) {
+        return navigatorLanguage.split('-')[0];
+    }
+
+    return navigatorLanguage;
+}
 
 function updateContent(language) {
     fetch(`assets/languages/${language}.json`)
@@ -45,8 +55,14 @@ function updateContent(language) {
 }
 
 function switchLanguage(language) {
+    if(language === currentLanguage) {
+        return;
+    }
+
     currentLanguage = language;
     updateContent(currentLanguage);
 }
 
-updateContent(currentLanguage);
+
+
+switchLanguage(getNavigatorLanguage());
