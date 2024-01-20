@@ -47,6 +47,7 @@ page_id: home
 
     {% seo %}
 </head>
+
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
 <header class="bg-primary py-4">
@@ -54,8 +55,7 @@ page_id: home
         <a class="text-2xl font-bold text-white">TRUE TOURISM</a>
         <nav>
             <ul class="flex">
-                <li><a class="text-white hover:text-details text-lg px-4" href="mailto:communication@truetourism.fr">Contact</a>
-                </li>
+                <li><a class="text-white hover:text-details text-lg px-4" href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a></li>
             </ul>
         </nav>
     </div>
@@ -67,9 +67,7 @@ page_id: home
             <div class="flex justify-center">
                 <img class="object-center" src="/assets/true_tourism_logo.svg" alt="True Tourism Logo">
             </div>
-            <p class="text-alternative text-xl py-2" id="header-text">
-                True Tourism, c’est la nouvelle application de tourisme entre particuliers centrée sur Marseille, qui
-                propose des visites touristiques personnalisées menées par des guides touristiques locaux passionnés.
+            <p class="text-alternative text-xl py-2" id="header-text">{{ site.data["index"].header-text }}
             </p>
             <div class="flex flex-col justify-center items-center pb-12">
                 <div class="flex-col py-4">
@@ -79,7 +77,7 @@ page_id: home
                                 id="app-store"
                                 class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5"
                                 alt="Télécharger sur l’App Store"
-                                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/fr-fr?size=250x83&amp;releaseDate=1686182400"
+                                src="{{ site.data['index'].app-store }}"
                         >
                     </a>
 
@@ -87,8 +85,8 @@ page_id: home
                         <img
                                 id="google-play"
                                 class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5"
-                                alt='Disponible sur Google Play'
-                                src='https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png'
+                                alt="Disponible sur Google Play"
+                                src="{{ site.data['index'].google-play }}"
                         />
                     </a>
 
@@ -103,9 +101,9 @@ page_id: home
 
 <section class="bg-primary py-8">
     <div class="container flex flex-col items-center mx-auto px-2 pt-4 pb-12 animated-hidden">
-        <h2 id="subtitle"
+        <h2 id="section-title-1"
             class="w-full md:w-1/2 px-2 py-2 align-baseline text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
-            Qui sommes-nous ?</h2>
+            {{ site.data["index"].section-title-1 }}</h2>
 
         <div class="flex flex-col justify-center items-center pt-8 my-0 md:my-8  sm:my-4">
 
@@ -116,19 +114,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 class="text-lg title-font text-center md:text-left font-medium mb-3" id="title-1">Passionnés de
-                        Marseille</h2>
-                    <p class="leading-relaxed text-base" id="description-1">
-                        Nous sommes une entreprise marseillaise fondée par des natifs passionnés par leur ville. Chez
-                        True Tourism, nous sommes fiers de partager notre amour de Marseille avec le monde entier. Nous
-                        croyons en son potentiel et cela nous tient à cœur de contribuer à son expansion. C'est
-                        pourquoi nous proposons des expériences touristiques authentiques et uniques, pour permettre à
-                        nos clients de visiter la cité phocéenne de la bonne façon.
-                        <br><br>
-                        Nous sommes convaincus que Marseille est une ville à découvrir et nous sommes ravis de pouvoir
-                        proposer cette expérience, pour vous faire découvrir la capitale de la Méditerranée de façon
-                        respectueuse et sous les conseils avisés de nos guides.
-                    </p>
+                    <h2 class="text-lg title-font text-center md:text-left font-medium mb-3" id="title-1">{{ site.data["index"].title-1 }}</h2>
+                    <p class="leading-relaxed text-base" id="description-1">{{ site.data["index"].description-1 }}</p>
                 </div>
             </div>
 
@@ -139,21 +126,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 id="title-2" class="text-lg title-font text-center md:text-left font-medium mb-3">Des guides
-                        touristiques
-                        locaux expérimentés</h2>
-                    <p class="leading-relaxed text-base" id="description-2">
-                        Nos guides touristiques, qu'ils soient particuliers ou professionnels, sont des locaux qui
-                        connaissent leur ville comme leur poche. Ils ont tous choisi de se spécialiser dans un ou
-                        plusieurs quartiers ou thèmes de la ville de Marseille, dans lesquels ils estiment pouvoir
-                        partager leurs connaissances sur des sujets ou des lieux particuliers.
-                        <br><br>
-                        En choisissant True Tourism, vous aurez la chance de découvrir Marseille comme un vrai
-                        Marseillais. Nos guides sont passionnés par leur ville et vous guider dans les rues étroites
-                        d'Endoume, vous faire découvrir les meilleures calanques de Marseille, vous faire gouter les
-                        meilleures spécialités provençales, et vous montrer les endroits les plus authentiques de la
-                        ville.
-                    </p>
+                    <h2 id="title-2" class="text-lg title-font text-center md:text-left font-medium mb-3">{{ site.data["index"].title-2 }}</h2>
+                    <p class="leading-relaxed text-base" id="description-2">{{ site.data["index"].description-2 }}</p>
                 </div>
             </div>
 
@@ -164,20 +138,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 id="title-3" class="text-lg title-font text-center md:text-left font-medium mb-3">Des visites
-                        guidées
-                        personnalisées et originales</h2>
-                    <p class="leading-relaxed text-base" id="description-3">
-                        Nos visites guidées sont également personnalisées en fonction de vos centres d'intérêt et de vos
-                        envies. Nous pouvons organiser des visites privées pour les groupes, les familles et les
-                        voyageurs solitaires, ou bien des visites publiques, pour rencontrer des gens qui partagent les
-                        mêmes centres d'intérêt que vous. Nous proposons des circuits
-                        touristiques par thématiques : Historique, Découverte, Artistique, Spécifique Anecdotique,
-                        Ludique, Urbaine. Le sud s’adapte à vous !
-                        <br><br>
-                        Chez True Tourism, nous sommes fiers de proposer des visites guidées de qualité supérieure, qui
-                        sont à la fois instructives et amusantes.
-                    </p>
+                    <h2 id="title-3" class="text-lg title-font text-center md:text-left font-medium mb-3">{{ site.data["index"].title-3 }}</h2>
+                    <p class="leading-relaxed text-base" id="description-3">{{ site.data["index"].description-3 }}</p>
                 </div>
             </div>
 
@@ -248,24 +210,23 @@ page_id: home
         <div class="w-full flex flex-col md:flex-row items-center justify-center">
 
             <a class="px-4" href="https://www.tiktok.com/@truetourism">
-                <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok Logo">
+                <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok">
             </a>
             <a class="px-4" href="https://www.instagram.com/true.tourism/">
-                <img class="h-12 w-12" src="/assets/instagram.svg" alt="Instagram Logo">
+                <img class="h-12 w-12" src="/assets/instagram.svg" alt="Instagram">
             </a>
 
             <a class="px-4" href="https://www.linkedin.com/company/truetourismfr">
-                <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn Logo">
+                <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn">
             </a>
 
         </div>
 
         <div class="w-full flex flex-col items-center justify-center py-4">
-            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="mailto:communication@truetourism.fr">Contact</a>
-            <a id="legal" href="legal.html"
-               class="no-underline hover:underline text-alternative hover:text-green-500 px-8">Mentions
-                légales</a>
+            <a id="contact" class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a>
+            <a id="legal" href="/legal"
+               class="no-underline hover:underline text-alternative hover:text-green-500 px-8">{{ site.data["index"].legal }}</a>
         </div>
 
     </div>
