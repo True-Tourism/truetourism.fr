@@ -1,5 +1,60 @@
-baseurl: ""
+source: "."
+destination: "./_site"
+
+data_dir: _data
+
 include:
   - .well-known
+exclude:
+  - .idea/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - readme.md
 plugins:
+  - jekyll-polyglot
   - jekyll-seo-tag
+
+title: "True Tourism"
+tagline: "La bonne façon de visiter"
+description:
+  fr: "True Tourism est une plateforme de réservation de visites guidées et d'activités touristiques en ligne. Nous proposons des visites guidées, des activités et des expériences uniques dans le monde entier. Réservez directement auprès des guides locaux et des agences de voyage."
+  en: "True Tourism is an online booking platform for guided tours and tourist activities. We offer unique guided tours, activities and experiences worldwide. Book directly with local guides and travel agencies."
+  es: "True Tourism es una plataforma de reserva en línea para visitas guiadas y actividades turísticas. Ofrecemos visitas guiadas, actividades y experiencias únicas en todo el mundo. Reserve directamente con guías locales y agencias de viajes."
+
+url : "https://www.truetourism.fr"
+
+# practical values langsep are "|", "•", "·", "-", "–"
+langsep: "-"
+
+# Polyglot
+default_lang: 'fr'
+languages: ['fr', 'en', 'es']
+# Custom variables
+languages_aliases:
+  fr: français
+  en: english
+  es: español
+exclude_from_localization: [
+  '.well-known',
+  'assets',
+  'css',
+  'dist',
+  'js',
+  '.gitignore',
+  '.ruby-version',
+  '_config.yml',
+  'app.html',
+  'CNAME',
+  'favicon.ico',
+  'Gemfile',
+  'Gemfile.lock',
+  'package.json',
+  'package-lock.json',
+  'readme.md',
+  'store.html',
+  'tailwind.config.js',
+]
+parallel_localization: true
+
+
