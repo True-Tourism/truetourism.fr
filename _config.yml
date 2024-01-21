@@ -6,7 +6,10 @@ data_dir: _data
 include:
   - .well-known
 exclude:
-  - .idea
+  - .idea/
+  - tmp/
+  - Gemfile
+  - Gemfile.lock
   - readme.md
 plugins:
   - jekyll-polyglot
