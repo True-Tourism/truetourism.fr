@@ -7,7 +7,7 @@ include:
   - .well-known
 exclude:
   - .idea/
-  - tmp/
+  - vendor/
   - Gemfile
   - Gemfile.lock
   - readme.md
