@@ -1,0 +1,16 @@
+section-title-1: "Simulateur de revenus"
+
+visit-type: "Type de visite"
+public: "Publique"
+private: "Privée"
+
+visit-duration: "Durée de la visite"
+one-hour: "1h"
+two-hours: "2h"
+three-hours: "3h"
+half-day: "4h"
+entire-day: "7h"
+
+participants: "Nombre de participants"
+
+result-text: "Une visite $0 de $1 avec $2 participants vous rapportera:"

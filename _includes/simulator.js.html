@@ -1,0 +1,146 @@
+<script type="module">
+
+    let VISIT_TYPE = null;
+    let DURATION = null;
+    let PARTICIPANTS = 0;
+
+    const resultTextTemplate = `{{ site.data["simulator"].result-text }}`;
+
+    function updateIncome() {
+        const income = calculateIncome();
+
+        document.getElementById('result-text').innerHTML = resultTextTemplate
+            .replace('$0', `<p class="text-primary inline">${data[VISIT_TYPE].toLowerCase()}</p>`)
+            .replace('$1', `<p class="text-primary inline">${data[DURATION].toLowerCase()}</p>`)
+            .replace('$2', `<p class="text-primary inline">${PARTICIPANTS}</p>`);
+
+        document.getElementById('income-text').textContent = `🎉 ${income.toFixed(2)}€ 🎉`;
+    }
+
+    // Mock function to fetch price from the server
+    function fetchPrice(duration, type) {
+        const prices = {
+            'ONE_HOUR': {'PUBLIC': 12.1, 'PRIVATE': 35.5},
+            'TWO_HOURS': {'PUBLIC': 23.65, 'PRIVATE': 45},
+            'THREE_HOURS': {'PUBLIC': 34.1, 'PRIVATE': 53.5},
+            'HALF_DAY': {'PUBLIC': 44.55, 'PRIVATE': 61},
+            'ENTIRE_DAY': {'PUBLIC': 66, 'PRIVATE': 75}
+        };
+
+        return prices[duration][type];
+    }
+
+    function fetchCommissionRate(duration, type) {
+        const commissions = {
+            'ONE_HOUR': {'PUBLIC': 0.35, 'PRIVATE': 0.65},
+            'TWO_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.5},
+            'THREE_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.42},
+            'HALF_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.365},
+            'ENTIRE_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.3}
+        };
+
+        return commissions[duration][type];
+    }
+
+    function calculateIncome() {
+        console.log('*****************************');
+        console.log(`     ${VISIT_TYPE} - ${data[DURATION]} - ${PARTICIPANTS}`);
+        console.log('*****************************');
+
+
+        const price = fetchPrice(DURATION, VISIT_TYPE);
+
+        const totalPriceWithTaxes = Math.round(price * PARTICIPANTS * 100) / 100;
+
+        console.log('Prix TTC :', totalPriceWithTaxes, '€');
+
+        const taxRate = 0.20; // 20% TVA
+
+        const totalPriceWithoutTaxes = Math.round(totalPriceWithTaxes / (1 + taxRate) * 100) / 100;
+
+        console.log('Prix HT :', totalPriceWithoutTaxes, '€');
+
+        console.log('Taux de TVA :', taxRate, '%');
+
+        const tax = Math.round((totalPriceWithTaxes - totalPriceWithoutTaxes) * 100) / 100;
+
+        console.log('TVA :', tax, '€');
+
+        const commissionRate = fetchCommissionRate(DURATION, VISIT_TYPE);
+
+        console.log('Taux de commission :', commissionRate, '%');
+
+        const commission = Math.round(totalPriceWithoutTaxes * commissionRate * 100) / 100;
+
+        console.log('Commission :', commission, '€');
+
+        const income = Math.round((totalPriceWithoutTaxes - commission) * 100) / 100;
+
+        console.log('Revenu guide HT :' , income, '€');
+        console.log('Facture guide TTC :' , Math.round(income * (1 + taxRate)), '€');
+
+        return income;
+    }
+
+    function updateParameterValues() {
+        document.querySelectorAll('[data-type][data-selected]').forEach((element) => {
+            VISIT_TYPE = element.getAttribute('data-type');
+        });
+
+        document.querySelectorAll('[data-duration][data-selected]').forEach((element) => {
+            DURATION = element.getAttribute('data-duration');
+        });
+
+        PARTICIPANTS = document.querySelector('input[id="participants"]').value;
+
+        updateIncome();
+    }
+
+    function toggleSelectedButtonStyle(element, selected) {
+        if (selected) {
+            element.classList.remove('bg-white', 'text-primary');
+            element.classList.add('bg-primary', 'text-white');
+        } else {
+            element.classList.remove('bg-primary', 'text-white');
+            element.classList.add('bg-white', 'text-primary');
+        }
+    }
+
+    // Visit Type
+    document.querySelectorAll('[data-type]').forEach((element) => {
+        element.addEventListener('click', function () {
+            document.querySelectorAll('[data-type]').forEach((element) => {
+                element.removeAttribute('data-selected');
+                toggleSelectedButtonStyle(element, false);
+            });
+
+            element.setAttribute('data-selected', 'true');
+            toggleSelectedButtonStyle(element, true);
+
+            updateParameterValues();
+        });
+    })
+
+    // Duration
+    document.querySelectorAll('[data-duration]').forEach((element) => {
+        element.addEventListener('click', function () {
+
+            document.querySelectorAll('[data-duration]').forEach((element) => {
+                element.removeAttribute('data-selected');
+                toggleSelectedButtonStyle(element, false);
+            });
+
+            element.setAttribute('data-selected', 'true');
+            toggleSelectedButtonStyle(element, true);
+
+            updateParameterValues();
+        });
+    })
+
+    // Participants
+    document.querySelector('input[id="participants"]').addEventListener('input', function () {
+        updateParameterValues();
+    });
+
+    updateParameterValues();
+</script>
