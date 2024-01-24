@@ -102,7 +102,7 @@ page_id: home
 <section class="bg-primary py-8">
     <div class="container flex flex-col items-center mx-auto px-2 pt-4 pb-12 animated-hidden">
         <h2 id="section-title-1"
-            class="w-full md:w-1/2 px-2 py-2 align-baseline text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
+            class="w-full md:w-1/2 px-2 py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
             {{ site.data["index"].section-title-1 }}</h2>
 
         <div class="flex flex-col justify-center items-center pt-8 my-0 md:my-8  sm:my-4">
@@ -143,6 +143,24 @@ page_id: home
                 </div>
             </div>
 
+        </div>
+
+        <h2 id="section-title-2"
+            class="w-full md:w-1/2 px-2 py-2 align-baseline text-3xl sm:text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
+            {{ site.data["index"].section-title-2 }}</h2>
+
+        <div class="flex flex-col justify-center items-center pt-8 my-0 md:my-8 sm:my-4">
+
+            <div class="flex flex-col md:flex-row w-5/6 justify-center bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 gap-4 animated-hidden animated-element">
+                <div class="self-center">
+                    <div class="h-24 w-24 rounded-full bg-detail flex justify-center items-center">
+                        <img class="h-20 w-20" src="/assets/eye.svg" alt="Eye">
+                    </div>
+                </div>
+                <div class="flex-grow">
+                    <p class="leading-relaxed text-base" id="description-4">{{ site.data["index"].description-4 }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
