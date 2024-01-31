@@ -46,7 +46,6 @@ page_id: home
     <link href="/css/animation.css" rel="stylesheet">
 
     <script defer src="/js/animation.js"></script>
-    <script defer src="/js/language.js"></script>
 
     {% seo %}
 </head>
@@ -58,6 +57,7 @@ page_id: home
         <a class="text-2xl font-bold text-white">TRUE TOURISM</a>
         <nav>
             <ul class="flex">
+                <li><a class="text-white hover:text-details text-lg px-4" href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}blog">Blog</a></li>
                 <li><a class="text-white hover:text-details text-lg px-4" href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a></li>
             </ul>
         </nav>

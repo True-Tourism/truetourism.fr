@@ -1,0 +1,21 @@
+section-title-1: "Nos articles"
+
+# Add new articles at the top of the list
+articles:
+  - team
+  - 2
+  - 3
+
+# Articles goe here
+
+article-title-team: "Qui sommes nous ?"
+article-date-team: "Mercredi 31 Janvier 2024"
+article-description-team: "Découvrez l'histoire de True Tourism, une entreprise marseillaise fondée par des natifs passionnés par leur ville."
+
+article-title-2: "Article 2"
+article-date-2: "Mercredi 31 Janvier 2024"
+article-description-2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eu lacinia lacinia, nisl nisl aliquam nisl, vitae aliquam nisl nisl euismod nisl. Donec euismod, nisl eu lacinia lacinia, nisl nisl aliquam nisl, vitae aliquam nisl nisl euismod nisl."
+
+article-title-3: "Article 3"
+article-date-3: "Mercredi 31 Janvier 2024"
+article-description-3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eu lacinia lacinia, nisl nisl aliquam nisl, vitae aliquam nisl nisl euismod nisl. Donec euismod, nisl eu lacinia lacinia, nisl nisl aliquam nisl, vitae aliquam nisl nisl euismod nisl."
