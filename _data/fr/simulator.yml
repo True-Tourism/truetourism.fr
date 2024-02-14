@@ -1,0 +1,12 @@
+section-title-1: "Simulateur de revenus"
+
+PUBLIC: "Publique"
+PRIVATE: "Privée"
+
+ONE_HOUR: "1h"
+TWO_HOURS: "2h"
+THREE_HOURS: "3h"
+HALF_DAY: "4h"
+ENTIRE_DAY: "7h"
+
+result-text: "Une visite $0 de $1 avec $2 participants vous rapportera:"

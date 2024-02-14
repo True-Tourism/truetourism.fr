@@ -1,0 +1,305 @@
+---
+title: Simulateur - True Tourism
+description: Simulez vos revenus en tant que guide touristique avec True Tourism
+author: True Tourism
+permalink: /simulator
+permalink_lang:
+    fr: /simulateur
+lang: fr
+page_id: simulator
+---
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tourisme, voyage, guide, visite, visite guidée, guide touristique, guide local, guide local, marseille, aix-en-provence, provence, côte d'azur, côte d'azur, france, europe, monde, application, mobile, application mobile, ap
+    plication de voyage">
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+
+    <!-- Simulator -->
+
+    <script type="module">
+        const data = {
+            "PUBLIC": "Publique",
+            "PRIVATE": "Privée",
+            "ONE_HOUR": "1h",
+            "TWO_HOURS": "2h",
+            "THREE_HOURS": "3h",
+            "HALF_DAY": "4h",
+            "ENTIRE_DAY": "7h"
+        }
+
+        let VISIT_TYPE = null;
+        let DURATION = null;
+        let PARTICIPANTS = 0;
+
+        const resultTextTemplate = `{{ site.data["simulator"].result-text }}`;
+
+        function updateIncome() {
+            const income = calculateIncome();
+
+            document.getElementById('result-text').innerHTML = resultTextTemplate
+                .replace('$0', `<p class="text-primary inline">${data[VISIT_TYPE].toLowerCase()}</p>`)
+                .replace('$1', `<p class="text-primary inline">${data[DURATION].toLowerCase()}</p>`)
+                .replace('$2', `<p class="text-primary inline">${PARTICIPANTS}</p>`);
+
+            document.getElementById('income-text').textContent = `🎉 ${income.toFixed(2)}€ 🎉`;
+        }
+
+        // Mock function to fetch price from the server
+        function fetchPrice(duration, type) {
+            const prices = {
+                'ONE_HOUR': {'PUBLIC': 12.1, 'PRIVATE': 35.5},
+                'TWO_HOURS': {'PUBLIC': 23.65, 'PRIVATE': 45},
+                'THREE_HOURS': {'PUBLIC': 34.1, 'PRIVATE': 53.5},
+                'HALF_DAY': {'PUBLIC': 44.55, 'PRIVATE': 61},
+                'ENTIRE_DAY': {'PUBLIC': 66, 'PRIVATE': 75}
+            };
+
+            return prices[duration][type];
+        }
+
+        function fetchCommissionRate(duration, type) {
+            const commissions = {
+                'ONE_HOUR': {'PUBLIC': 0.35, 'PRIVATE': 0.65},
+                'TWO_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.5},
+                'THREE_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.42},
+                'HALF_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.365},
+                'ENTIRE_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.3}
+            };
+
+            return commissions[duration][type];
+        }
+
+        function calculateIncome() {
+            const price = fetchPrice(DURATION, VISIT_TYPE);
+
+            const commissionRate = fetchCommissionRate(DURATION, VISIT_TYPE);
+
+            const taxRate = 0.20; // 20% TVA
+
+            const totalPriceWithTaxes = price * PARTICIPANTS;
+
+            const totalPriceWithoutTaxes = totalPriceWithTaxes / (1 + taxRate);
+
+            const commission = totalPriceWithoutTaxes * commissionRate;
+
+            return totalPriceWithoutTaxes - commission;
+        }
+
+        function updateParameterValues() {
+            document.querySelectorAll('[data-type][data-selected]').forEach((element) => {
+                VISIT_TYPE = element.getAttribute('data-type');
+            });
+
+            document.querySelectorAll('[data-duration][data-selected]').forEach((element) => {
+                DURATION = element.getAttribute('data-duration');
+            });
+
+            PARTICIPANTS = document.querySelector('input[id="participants"]').value;
+
+            updateIncome();
+        }
+
+        function toggleSelectedButtonStyle(element, selected) {
+            if (selected) {
+                element.classList.remove('bg-white', 'text-primary');
+                element.classList.add('bg-primary', 'text-white');
+            } else {
+                element.classList.remove('bg-primary', 'text-white');
+                element.classList.add('bg-white', 'text-primary');
+            }
+        }
+
+        // Visit Type
+        document.querySelectorAll('[data-type]').forEach((element) => {
+            element.addEventListener('click', function () {
+                document.querySelectorAll('[data-type]').forEach((element) => {
+                    element.removeAttribute('data-selected');
+                    toggleSelectedButtonStyle(element, false);
+                });
+
+                element.setAttribute('data-selected', 'true');
+                toggleSelectedButtonStyle(element, true);
+
+                updateParameterValues();
+            });
+        })
+
+        // Duration
+        document.querySelectorAll('[data-duration]').forEach((element) => {
+            element.addEventListener('click', function () {
+
+                document.querySelectorAll('[data-duration]').forEach((element) => {
+                    element.removeAttribute('data-selected');
+                    toggleSelectedButtonStyle(element, false);
+                });
+
+                element.setAttribute('data-selected', 'true');
+                toggleSelectedButtonStyle(element, true);
+
+                updateParameterValues();
+            });
+        })
+
+        // Participants
+        document.querySelector('input[id="participants"]').addEventListener('input', function () {
+            updateParameterValues();
+        });
+
+        updateParameterValues();
+    </script>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    {% seo %}
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <a class="text-2xl font-bold text-white hover:text-zinc-400"
+           href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}">TRUE TOURISM</a>
+        <nav>
+            <ul class="flex">
+                <li><a class="text-white hover:text-zinc-400 text-lg px-4"
+                       href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}simulator">Simulateur</a>
+                </li>
+                <li><a class="text-white hover:text-zinc-400 text-lg px-4"
+                       href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}blog">Blog</a>
+                </li>
+                <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="mailto:communication@truetourism.fr">{{
+                    site.data["index"].contact }}</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="py-6">
+    <div class="container flex flex-col items-center mx-auto px-2 pt-4 pb-12">
+        <h2 id="section-title-1"
+            class="w-full md:w-1/2 px-2 py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
+            {{ site.data["simulator"].section-title-1 }}</h2>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col justify-center items-center space-y-4 py-4 my-4 md:my-8  bg-white rounded-lg shadow-md">
+
+            <label class="text-gray-700 font-medium">Type de visite</label>
+
+            <div class="flex justify-center items-center space-x-2">
+
+                <button id="public-btn"
+                        class="bg-primary hover:bg-primary border-primary border-2 text-white hover:text-white rounded py-2 px-4 mb-2"
+                        data-type="PUBLIC"
+                        data-selected="true">Publique
+                </button>
+                <button id="private-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-type="PRIVATE">Privée
+                </button>
+            </div>
+
+
+            <label class="block text-gray-700 font-medium">Durée de la visite</label>
+
+            <div class="flex flex-wrap w-2/3 space-x-2 justify-center items-center">
+
+                <button id="one-hour-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="ONE_HOUR">1h
+                </button>
+                <button id="two-hours-btn"
+                        class="bg-primary hover:bg-primary border-primary border-2 text-white hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="TWO_HOURS"
+                        data-selected="true">2h
+                </button>
+                <button id="three-hours-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="THREE_HOURS">3h
+                </button>
+                <button id="half-day-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="HALF_DAY">4h
+                </button>
+                <button id="entire-day-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="ENTIRE_DAY">7h
+                </button>
+            </div>
+
+
+            <label class="block text-gray-700 font-medium">Nombre de participants</label>
+
+            <div class="flex justify-center items-center space-x-2 my-2">
+                <p class="text-gray-600 text-sm">5</p>
+                <input id="participants" type="range" min="5" max="20" value="7"
+                       class="w-full h-1 bg-primary appearance-none rounded-lg cursor-pointer">
+                <p class="text-gray-600 text-sm">20</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center space-x-2 my-2">
+
+                <div class="min-width-0 px-12 mb-2 font-semibold text-lg text-center">
+                    <p id="result-text" class="inline"></p>
+                </div>
+
+                <p id="income-text" class="px-12 text-lg font-semibold text-center"></p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-white">
+    <div class="container mx-auto px-8 py-4">
+
+        <div class="w-full flex flex-col items-center justify-center py-4">
+            {% for lang in site.languages %}
+
+            {% if lang == page.lang %} {% continue %} {% endif %}
+
+            {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if
+            page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
+
+            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="{% if lang_href == '/' %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
+                {{ site.languages_aliases[lang] }}
+            </a>
+            {% endfor %}
+        </div>
+
+        <div class="w-full flex flex-col md:flex-row items-center justify-center">
+
+            <a class="px-4" href="https://www.tiktok.com/@truetourism">
+                <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok">
+            </a>
+            <a class="px-4" href="https://www.instagram.com/true.tourism/">
+                <img class="h-12 w-12" src="/assets/instagram.svg" alt="Instagram">
+            </a>
+
+            <a class="px-4" href="https://www.linkedin.com/company/truetourismfr">
+                <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn">
+            </a>
+
+        </div>
+
+        <div class="w-full flex flex-col items-center justify-center py-4">
+            <a id="contact" class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a>
+            <a id="legal" href="{{ site.url }}/legal"
+               class="no-underline hover:underline text-alternative hover:text-green-500 px-8">{{
+                site.data["index"].legal }}</a>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
