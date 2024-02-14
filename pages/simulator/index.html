@@ -77,19 +77,36 @@ page_id: simulator
         }
 
         function calculateIncome() {
+            console.log('-------------------');
+
             const price = fetchPrice(DURATION, VISIT_TYPE);
-
-            const commissionRate = fetchCommissionRate(DURATION, VISIT_TYPE);
-
-            const taxRate = 0.20; // 20% TVA
 
             const totalPriceWithTaxes = price * PARTICIPANTS;
 
-            const totalPriceWithoutTaxes = totalPriceWithTaxes / (1 + taxRate);
+            console.log('Prix TTC :', totalPriceWithTaxes);
 
-            const commission = totalPriceWithoutTaxes * commissionRate;
+            const taxRate = 0.20; // 20% TVA
 
-            return totalPriceWithoutTaxes - commission;
+            const totalPriceWithoutTaxes = Math.round(totalPriceWithTaxes / (1 + taxRate) * 100) / 100;
+
+            console.log('Prix HT :', totalPriceWithoutTaxes);
+
+            const tax = Math.round((totalPriceWithTaxes - totalPriceWithoutTaxes) * 100) / 100;
+
+            console.log('TVA :', tax);
+
+            const commissionRate = fetchCommissionRate(DURATION, VISIT_TYPE);
+
+            const commission = Math.round(totalPriceWithoutTaxes * commissionRate * 100) / 100;
+
+            console.log('Commission :', commission);
+
+            const income = Math.round((totalPriceWithoutTaxes - commission) * 100) / 100;
+
+            console.log('Revenu guide HT :' , income);
+            console.log('Facture guide TTC :' , Math.round(income * (1 + taxRate)));
+
+            return income;
         }
 
         function updateParameterValues() {
