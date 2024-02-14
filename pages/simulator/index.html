@@ -77,7 +77,10 @@ page_id: simulator
         }
 
         function calculateIncome() {
-            console.log('-------------------');
+            console.log('*****************************');
+            console.log(`     ${VISIT_TYPE} - ${data[DURATION]} - ${PARTICIPANTS}`);
+            console.log('*****************************');
+
 
             const price = fetchPrice(DURATION, VISIT_TYPE);
 
