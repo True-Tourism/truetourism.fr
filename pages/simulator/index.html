@@ -84,30 +84,34 @@ page_id: simulator
 
             const price = fetchPrice(DURATION, VISIT_TYPE);
 
-            const totalPriceWithTaxes = price * PARTICIPANTS;
+            const totalPriceWithTaxes = Math.round(price * PARTICIPANTS * 100) / 100;
 
-            console.log('Prix TTC :', totalPriceWithTaxes);
+            console.log('Prix TTC :', totalPriceWithTaxes, '€');
 
             const taxRate = 0.20; // 20% TVA
 
             const totalPriceWithoutTaxes = Math.round(totalPriceWithTaxes / (1 + taxRate) * 100) / 100;
 
-            console.log('Prix HT :', totalPriceWithoutTaxes);
+            console.log('Prix HT :', totalPriceWithoutTaxes, '€');
+
+            console.log('Taux de TVA :', taxRate, '%');
 
             const tax = Math.round((totalPriceWithTaxes - totalPriceWithoutTaxes) * 100) / 100;
 
-            console.log('TVA :', tax);
+            console.log('TVA :', tax, '€');
 
             const commissionRate = fetchCommissionRate(DURATION, VISIT_TYPE);
 
+            console.log('Taux de commission :', commissionRate, '%');
+
             const commission = Math.round(totalPriceWithoutTaxes * commissionRate * 100) / 100;
 
-            console.log('Commission :', commission);
+            console.log('Commission :', commission, '€');
 
             const income = Math.round((totalPriceWithoutTaxes - commission) * 100) / 100;
 
-            console.log('Revenu guide HT :' , income);
-            console.log('Facture guide TTC :' , Math.round(income * (1 + taxRate)));
+            console.log('Revenu guide HT :' , income, '€');
+            console.log('Facture guide TTC :' , Math.round(income * (1 + taxRate)), '€');
 
             return income;
         }
