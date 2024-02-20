@@ -3,10 +3,6 @@ title: Income Simulator - True Tourism
 description: Simulate your income as a tour guide with True Tourism
 author: True Tourism
 permalink: /simulator
-permalink_lang:
-    fr: simulator
-    en: en/simulator
-    es: es/simulator
 lang: en
 page_id: simulator
 ---
@@ -149,20 +145,12 @@ page_id: simulator
 
             {% if lang == page.lang %} {% continue %} {% endif %}
 
-
-            {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if
-            page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
+            {% capture lang_href %}{% if lang != site.default_lang %}/{{ lang }}{% endif %}{{page.permalink }}{% endcapture %}
 
             <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="{% if lang == site.default_lang %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
+               rel="alternate" hreflang="{{ lang }}"
+               {% static_href %}href="{{ site.url }}{{ lang_href}}"{% endstatic_href %} >
                 {{ site.languages_aliases[lang] }}
-            </a>
-
-
-
-            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="/{{ site.url }}/{{page.permalink_lang[lang]}}">
-                {{ site.languages_aliases[lang] }} - {{ site.url }}/{{page.permalink_lang[lang]}}
             </a>
 
             {% endfor %}

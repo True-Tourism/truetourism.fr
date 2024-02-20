@@ -3,9 +3,6 @@ title: Simulador de ingresos - True Tourism
 description: Simula tus ingresos como guía turístico con True Tourism
 author: True Tourism
 permalink: /simulator
-permalink_lang:
-    en: simulator
-    es: simulator
 lang: es
 page_id: simulator
 ---
@@ -148,13 +145,14 @@ page_id: simulator
 
             {% if lang == page.lang %} {% continue %} {% endif %}
 
-            {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if
-            page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
+            {% capture lang_href %}{% if lang != site.default_lang %}/{{ lang }}{% endif %}{{page.permalink }}{% endcapture %}
 
             <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="{% if lang_href == '/' %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
+               rel="alternate" hreflang="{{ lang }}"
+               {% static_href %}href="{{ site.url }}{{ lang_href}}"{% endstatic_href %} >
                 {{ site.languages_aliases[lang] }}
             </a>
+
             {% endfor %}
         </div>
 
