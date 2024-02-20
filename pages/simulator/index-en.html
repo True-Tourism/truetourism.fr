@@ -1,16 +1,17 @@
 ---
-title: Simulateur de revenus - True Tourism
-description: Simulez vos revenus en tant que guide touristique avec True Tourism
+title: Income Simulator - True Tourism
+description: Simulate your income as a tour guide with True Tourism
 author: True Tourism
 permalink: /simulator
 permalink_lang:
-    en: simulator
-    es: simulator
-lang: fr
+    fr: simulator
+    en: en/simulator
+    es: es/simulator
+lang: en
 page_id: simulator
 ---
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -25,13 +26,13 @@ page_id: simulator
     <!-- Multilingual javascript variables -->
     <script>
         const data = {
-            "PUBLIC": "Publique",
-            "PRIVATE": "Privée",
-            "ONE_HOUR": "1 heure",
-            "TWO_HOURS": "2 heures",
-            "THREE_HOURS": "3 heures",
-            "HALF_DAY": "4 heures",
-            "ENTIRE_DAY": "7 heures"
+            "PUBLIC": "Public",
+            "PRIVATE": "Private",
+            "ONE_HOUR": "1 hour",
+            "TWO_HOURS": "2 hours",
+            "THREE_HOURS": "3 hours",
+            "HALF_DAY": "4 hours",
+            "ENTIRE_DAY": "7 hours"
         }
     </script>
 
@@ -148,13 +149,22 @@ page_id: simulator
 
             {% if lang == page.lang %} {% continue %} {% endif %}
 
+
             {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if
             page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
 
             <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="{% if lang_href == '/' %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
+               href="{% if lang == site.default_lang %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
                 {{ site.languages_aliases[lang] }}
             </a>
+
+
+
+            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="/{{ site.url }}/{{page.permalink_lang[lang]}}">
+                {{ site.languages_aliases[lang] }} - {{ site.url }}/{{page.permalink_lang[lang]}}
+            </a>
+
             {% endfor %}
         </div>
 
