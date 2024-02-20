@@ -1,0 +1,16 @@
+section-title-1: "Income simulator"
+
+visit-type: "Visit type"
+public: "Public"
+private: "Private"
+
+visit-duration: "Visit duration"
+one-hour: "1hr"
+two-hours: "2hr"
+three-hours: "3hr"
+half-day: "4hr"
+entire-day: "7hr"
+
+participants: "Number of participants"
+
+result-text: "A $0 visit of $1 with $2 participants will earn you:"

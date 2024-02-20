@@ -10,6 +10,7 @@ include:
   - sitemap.xml
 exclude:
   - .idea/
+  - node_modules/
   - vendor/
   - Gemfile
   - Gemfile.lock

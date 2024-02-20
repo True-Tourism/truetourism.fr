@@ -1,0 +1,185 @@
+---
+title: Income Simulator - True Tourism
+description: Simulate your income as a tour guide with True Tourism
+author: True Tourism
+permalink: /simulator
+lang: en
+page_id: simulator
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tourisme, voyage, guide, visite, visite guidée, guide touristique, guide local, guide local, marseille, aix-en-provence, provence, côte d'azur, côte d'azur, france, europe, monde, application, mobile, application mobile, ap
+    plication de voyage">
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+
+    <!-- Multilingual javascript variables -->
+    <script>
+        const data = {
+            "PUBLIC": "Public",
+            "PRIVATE": "Private",
+            "ONE_HOUR": "1 hour",
+            "TWO_HOURS": "2 hours",
+            "THREE_HOURS": "3 hours",
+            "HALF_DAY": "4 hours",
+            "ENTIRE_DAY": "7 hours"
+        }
+    </script>
+
+    <!-- Simulator -->
+    {% include simulator.js.html %}
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    {% seo %}
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<header class="bg-primary py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <a class="text-2xl font-bold text-white hover:text-zinc-400"
+           href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}">TRUE TOURISM</a>
+        <nav>
+            <ul class="flex">
+                <li><a class="text-white hover:text-zinc-400 text-lg px-4"
+                       href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}simulator">
+                    {{ site.data["index"].simulator }}</a>
+                </li>
+                <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="mailto:communication@truetourism.fr">
+                    {{ site.data["index"].contact }}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="py-6">
+    <div class="container flex flex-col items-center mx-auto px-2 pt-4 pb-12">
+        <h2 id="section-title-1"
+            class="w-full md:w-1/2 px-2 py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
+            {{ site.data["simulator"].section-title-1 }}</h2>
+
+        <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col justify-center items-center space-y-4 py-4 my-4 md:my-8  bg-white rounded-lg shadow-md">
+
+            <label class="text-gray-700 font-medium">{{ site.data["simulator"].visit-type }}</label>
+
+            <div class="flex justify-center items-center space-x-2">
+
+                <button id="public-btn"
+                        class="bg-primary hover:bg-primary border-primary border-2 text-white hover:text-white rounded py-2 px-4 mb-2"
+                        data-type="PUBLIC"
+                        data-selected="true">{{ site.data["simulator"].public }}
+                </button>
+                <button id="private-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-type="PRIVATE">{{ site.data["simulator"].private }}
+                </button>
+            </div>
+
+
+            <label class="block text-gray-700 font-medium">{{ site.data["simulator"].visit-duration }}</label>
+
+            <div class="flex flex-wrap w-2/3 space-x-2 justify-center items-center">
+
+                <button id="one-hour-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="ONE_HOUR">{{ site.data["simulator"].one-hour }}
+                </button>
+                <button id="two-hours-btn"
+                        class="bg-primary hover:bg-primary border-primary border-2 text-white hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="TWO_HOURS"
+                        data-selected="true">{{ site.data["simulator"].two-hours }}
+                </button>
+                <button id="three-hours-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="THREE_HOURS">{{ site.data["simulator"].three-hours }}
+                </button>
+                <button id="half-day-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="HALF_DAY">{{ site.data["simulator"].half-day }}
+                </button>
+                <button id="entire-day-btn"
+                        class="bg-white hover:bg-primary border-primary border-2 text-primary hover:text-white rounded py-2 px-4 mb-2"
+                        data-duration="ENTIRE_DAY">{{ site.data["simulator"].entire-day }}
+                </button>
+            </div>
+
+
+            <label class="block text-gray-700 font-medium">{{ site.data["simulator"].participants }}</label>
+
+            <div class="flex justify-center items-center space-x-2 my-2">
+                <p class="text-gray-600 text-sm">5</p>
+                <input id="participants" type="range" min="5" max="20" value="7"
+                       class="w-full h-2 bg-primary appearance-none rounded-lg cursor-pointer">
+                <p class="text-gray-600 text-sm">20</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center space-x-2 my-2">
+
+                <div class="min-width-0 px-12 mb-2 font-semibold text-lg text-center">
+                    <p id="result-text" class="inline"></p>
+                </div>
+
+                <p id="income-text" class="px-12 text-lg font-semibold text-center"></p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-white">
+    <div class="container mx-auto px-8 py-4">
+
+        <div class="w-full flex flex-col items-center justify-center py-4">
+            {% for lang in site.languages %}
+
+            {% if lang == page.lang %} {% continue %} {% endif %}
+
+            {% capture lang_href %}{% if lang != site.default_lang %}/{{ lang }}{% endif %}{{page.permalink }}{% endcapture %}
+
+            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               rel="alternate" hreflang="{{ lang }}"
+               {% static_href %}href="{{ site.url }}{{ lang_href}}"{% endstatic_href %} >
+                {{ site.languages_aliases[lang] }}
+            </a>
+
+            {% endfor %}
+        </div>
+
+        <div class="w-full flex flex-col md:flex-row items-center justify-center">
+
+            <a class="px-4" href="https://www.tiktok.com/@truetourism">
+                <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok">
+            </a>
+            <a class="px-4" href="https://www.instagram.com/true.tourism/">
+                <img class="h-12 w-12" src="/assets/instagram.svg" alt="Instagram">
+            </a>
+
+            <a class="px-4" href="https://www.linkedin.com/company/truetourismfr">
+                <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn">
+            </a>
+
+        </div>
+
+        <div class="w-full flex flex-col items-center justify-center py-4">
+            <a id="contact" class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
+               href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a>
+            <a id="legal" href="{{ site.url }}/legal"
+               class="no-underline hover:underline text-alternative hover:text-green-500 px-8">{{
+                site.data["index"].legal }}</a>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
