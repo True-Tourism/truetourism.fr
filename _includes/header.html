@@ -4,6 +4,9 @@
        href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}">TRUE TOURISM</a>
     <nav>
       <ul class="flex">
+        <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}posts">
+          {{ site.data["index"].posts }}</a>
+        </li>
         <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="mailto:communication@truetourism.fr">
           {{ site.data["index"].contact }}</a>
         </li>
