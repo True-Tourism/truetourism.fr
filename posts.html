@@ -1,0 +1,84 @@
+---
+title: Blog - True Tourism
+description: Le blog de True Tourism
+author: True Tourism
+permalink: /posts
+permalink_lang:
+fr: /posts
+en: /en/posts
+es: /es/posts
+lang: fr
+page_id: posts
+---
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tourisme, voyage, guide, visite, visite guidée, guide touristique, guide local, guide local, marseille, aix-en-provence, provence, côte d'azur, côte d'azur, france, europe, monde, application, mobile, application mobile, ap
+    plication de voyage">
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    <script defer src="/js/animation.js"></script>
+
+    {% seo %}
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+{% include header.html %}
+
+<section class="py-6">
+    <div class="container flex flex-col items-center mx-auto px-2 pt-4 pb-12 animated-hidden">
+        <h2 id="section-title-1"
+            class="w-full md:w-1/2 px-2 py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-center text-white bg-alternative rounded-full break-words">
+            {{ site.data["index"].posts }}</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
+
+            {% assign siteposts = site.posts | where: 'lang',page.lang %}
+            {% for post in siteposts %}
+
+            <div class="flex flex-col w-full justify-between bg-white shadow-md rounded-lg p-8 mt-8 my-4
+                animated-hidden animated-element hover:bg-gray-100 hover:shadow-lg"
+                 style="transition: all 0.5s ease 0s;">
+                <div>
+                    <h2 class="text-lg title-font text-center md:text-left font-medium">
+                        {{ post.title }}
+                    </h2>
+                    <h3 class="text-alternative text-center md:text-left text-xs mb-3">
+                        <!-- Edit date format depending on locale here -->
+                        Publié le {{ post.date | date: "%d/%m/%Y" }}
+                    </h3>
+                    <img class="h-40 w-full object-cover object-center mb-6 rounded"
+                         src="{{ post.image }}" alt="{{ post.title }} image de présentation">
+                    <p class="text-justify max-h-96 overflow-hidden">
+                        {{ post.excerpt }}
+                    </p>
+                </div>
+
+                <button class="bg-alternative text-white active:bg-green-600 font-bold uppercase text-sm px-4 py-2 mt-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        style="transition: all 0.15s ease 0s;"
+                        type="button" onclick="window.location.href='{{ post.url }}'">
+                    <a href="{{ post.url }}">Lire la suite</a>
+                </button>
+
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include footer.html %}
+
+</body>
+</html>
