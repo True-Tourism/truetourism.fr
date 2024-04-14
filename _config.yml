@@ -43,6 +43,8 @@ exclude_from_localization: [
   'css',
   'dist',
   'js',
+  'node_modules',
+  '_test',
   '.gitignore',
   '.ruby-version',
   '_config.yml',
