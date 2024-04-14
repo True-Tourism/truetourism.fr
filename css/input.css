@@ -5,3 +5,10 @@
 p , h2{
   color: #000D46
 }
+
+h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}

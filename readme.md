@@ -19,3 +19,9 @@ bundle install
 ```bash
 bundle exec jekyll serve
 ```
+
+### Update TailwindCSS
+
+```bash
+npm run tailwind
+```
