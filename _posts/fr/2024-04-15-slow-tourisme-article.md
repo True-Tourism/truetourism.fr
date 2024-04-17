@@ -6,7 +6,7 @@ date: 2024-04-15
 lang: fr
 layout: post
 ---
-![Le Slow Tourisme](/assets/images/shooting-1-photo1){: .rounded .my-2}
+![Le Slow Tourisme](/assets/images/shooting-photo-001.jpeg){: .rounded .my-2}
 
 _{{ page.excerpt }}_
 
@@ -25,6 +25,6 @@ Aix-Marseille et ses alentours regorgent de trésors à découvrir au rythme du 
 ## Une Parenthèse de Détente
 En adoptant une approche plus délibérée du voyage, le slow tourisme offre également une véritable parenthèse de détente. Plus qu’une simple énumération d’activités à cocher sur une liste, c’est une invitation à ralentir, à savourer chaque instant et à se laisser imprégner par l’atmosphère unique de Marseille et de ses environs. Que ce soit en dégustant une bouillabaisse traditionnelle dans un bistrot local ou en flânant le long du Vieux-Port au coucher du soleil, chaque expérience devient un souvenir à chérir.
 
-![texte alt image](/assets/images/image-libre-1){: .rounded .my-2}
+![texte alt image](/assets/images/image-libre-001.jpeg){: .rounded .my-2}
 
 En embrassant le slow tourisme, les voyageurs ont l’opportunité de redécouvrir le véritable plaisir du voyage, loin de l’agitation du monde moderne. Avec True Tourism comme compagne de voyage, Marseille et ses alentours se révèlent comme une destination idéale pour ceux qui cherchent à explorer en profondeur, à se ressourcer et à créer des souvenirs durables. Embarquez pour une aventure authentique où le temps se dilate et où chaque instant compte.
