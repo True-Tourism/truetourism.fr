@@ -8,6 +8,7 @@ layout: post
 ---
 
 ![Le Sur-Tourisme menace Marseille et la région PACA](/assets/images/image-libre-003.jpeg){: .rounded .my-2}
+
 _{{ page.excerpt }}_
 
 ## Le Sur-Tourisme… Kézaco ? 
