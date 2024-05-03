@@ -13,7 +13,7 @@ layout: post
 
 ## Balades Touristiques Authentiques
 
-L’une des caractéristiques les plus importantes du slow tourisme est son engagement envers l’authenticité. Notre app, True Tourism, fait écho  à cette philosophie en proposant des balades touristiques soigneusement conçues, mettant en lumière les trésors cachés et les aspects moins connus de Marseille et de ses alentours. Des quartiers pittoresques aux ruelles historiques, chaque itinéraire est une invitation à plonger dans l’âme de la région, à la rencontre de son patrimoine, de sa culture et de ses habitants et de leur accent chantant si attachant. 
+L’une des caractéristiques les plus importantes du slow tourisme est son engagement envers l’authenticité. Notre app, True Tourism, fait écho  à cette philosophie en proposant des balades touristiques soigneusement conçues, mettant en lumière les trésors cachés et les aspects moins connus de Marseille et de ses alentours. Des quartiers pittoresques aux ruelles historiques, chaque itinéraire nous invite à nous plonger dans l’âme de la région, à la rencontre de son patrimoine, de sa culture et de ses habitants et de leur accent chantant si attachant. 
 
 ## Une Application pour un Séjour Serein
 Grâce à notre application, planifier et vivre des visites enrichissantes devient un jeu d’enfant. Fini le stress lié à l’organisation des déplacements et des activités. Avec une interface conviviale et des fonctionnalités pratiques, notre application permet aux voyageurs de se concentrer sur l’essentiel : l’exploration en toute tranquillité. Que ce soit pour une escapade d’un jour ou un séjour prolongé, l’expérience du slow tourisme à Marseille est désormais à portée de main, et on a hâte de visiter tout cela sans se presser… 
