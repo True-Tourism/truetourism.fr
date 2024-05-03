@@ -19,7 +19,7 @@ Marseille, sa beauté méditerranéenne et son riche patrimoine culturel, attire
 Les **quartiers historiques** et les **sites emblématiques** sont souvent surchargés en période estivale, ce qui entraîne une détérioration de l'expérience touristique et un désagrément pour les locaux qui ont parfois du mal à circuler. 
 En tant que marseillais, nous le savons bien et le constatons chaque été, de nombreux sites sont réputés pour être saturés : *les Calanques de Cassis, Sugiton, Notre Dame de la Garde, Porquerolles, En-Vau,* etc… font face à une surfréquentation qui met en péril leur écosystème fragile et la qualité de vie des riverains.
 
-![Site emblématique surchargé de touristes du monde entier](/assets/images/image-libre-002.jpeg){: .rounded .my-2}
+![Site emblématique surchargé de touristes du monde entier](/assets/images/Touristes-aux-catalans.jpg){: .rounded .my-2}
 
 ## Vers un tourisme responsable
 Les retombées économiques du tourisme sont indéniables, mais elles doivent être équilibrées avec la préservation de l’environnement et du tissu social. 
