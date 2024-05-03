@@ -1,5 +1,5 @@
 ---
-title: "Le Slow Tourisme : Redécouvrir le Plaisir du Voyage sans Pression à Marseille et des Alentours"
+title: "Le Slow Tourisme : Redécouvrir le plaisir du voyage sans pression à Marseille et ses Alentours"
 excerpt: "Dans notre ère où l’information doit être accessible partout et rapidement , le concept du slow tourisme émerge comme une bouffée d’air frais pour les voyageurs en quête d’authenticité et de détente. À Marseille et dans ses environs, cette approche trouve une résonance particulière, offrant une manière unique d’explorer la région à un rythme plus humain, tout en savourant chaque instant. On le sait, dans le Sud, on aime vivre la vie piano piano, au chant des cigales…"
 image: /assets/images/shooting-photo-001.jpeg
 date: 2024-04-29
@@ -31,5 +31,5 @@ Avec notre application comme compagne de voyage, Marseille et ses alentours se r
 
 
 Venez découvrir Marseille et la Provence, à votre rythme, sans la pression du voyage, avec True Tourism pour vous guider. 
-Réservez votre visite sur [True Tourism](https://www.truetourism.fr/store)
+Réservez votre visite sur [l'application True Tourism](https://www.truetourism.fr/store)
 
