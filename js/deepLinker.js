@@ -62,7 +62,7 @@ function DeepLinker(options) {
 
     // expose public API
     this.destroy = bindEvents.bind(null, 'remove');
-    this.openURL = function(url) {
+    this.openURL = function(url, fallbackUrl) {
         // it can take a while for the dialog to appear
         const dialogTimeout = 500;
 
@@ -70,6 +70,9 @@ function DeepLinker(options) {
             if (hasFocus && options.onIgnored) {
                 options.onIgnored();
             }
+
+            // If the app is not installed, redirect to the App Store
+            window.location = fallbackUrl;
         }, dialogTimeout);
 
         window.location = url;
