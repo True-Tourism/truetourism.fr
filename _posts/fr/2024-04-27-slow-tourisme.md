@@ -47,4 +47,4 @@ Avec l'application True Tourism comme compagnon de voyage, Marseille et ses alen
 <br>
 
 Venez découvrir Marseille et la Provence, à votre rythme, sans la pression du voyage, avec True Tourism pour vous guider.
-Réservez votre visite sur [l'application True Tourism](/app)
+Réservez votre visite sur [l'application True Tourism](/store)
