@@ -38,7 +38,7 @@ function DeepLinker(options) {
                     if (!didHide) {
                         options.onCancel();
                     }
-                }, 1000);
+                }, 500);
             }
         }
 
@@ -67,7 +67,7 @@ function DeepLinker(options) {
             if(!hasFocus && options.onFail) {
                 options.onFail();
             }
-        }, 500);
+        }, 1000);
 
         window.location = url;
     };
