@@ -11,16 +11,16 @@
 <script defer>
 
     const linker = new DeepLinker({
-        onIgnored: () => window.location.href = 'https://www.truetourism.fr',
-        onReturn: () => window.location.href = 'https://www.truetourism.fr'
+        onFail: () => window.location.href = '/store',
+        onReturn: () => window.location.href = '/',
+        onCancel: () => window.location.href = '/',
     })
 
     //const redirectionParam = getParameterByName('redirect');
 
     const deepLink = 'true-tourism://home';
-    const fallbackUrl = 'https://www.truetourism.fr/store'
 
-    linker.openURL(deepLink, fallbackUrl); // redirectionParam ? `${deepLink}app/${redirectionParam}` : deepLink);
+    linker.openURL(deepLink); // redirectionParam ? `${deepLink}app/${redirectionParam}` : deepLink);
 
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
