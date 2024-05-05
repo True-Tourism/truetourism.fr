@@ -30,13 +30,13 @@ function DeepLinker(options) {
         } else {
             // ignore duplicate focus event when returning from native app on
             // iOS Safari 13.3+
-            if (!hasFocus && options.onFallback) {
+            if (!hasFocus && options.onCancel) {
                 // wait for app switch transition to fully complete - only then is
                 // 'visibilitychange' fired
                 setTimeout(function() {
                     // if browser was not hidden, the deep link failed
                     if (!didHide) {
-                        options.onFallback();
+                        options.onCancel();
                     }
                 }, 1000);
             }
@@ -63,14 +63,11 @@ function DeepLinker(options) {
     // expose public API
     this.destroy = bindEvents.bind(null, 'remove');
     this.openURL = function(url) {
-        // it can take a while for the dialog to appear
-        const dialogTimeout = 500;
-
         setTimeout(function() {
-            if (hasFocus && options.onIgnored) {
-                options.onIgnored();
+            if(!hasFocus && options.onFail) {
+                options.onFail();
             }
-        }, dialogTimeout);
+        }, 500);
 
         window.location = url;
     };
@@ -82,10 +79,10 @@ var url = 'fb://profile/240995729348595';
 var badURL = 'lksadjgajsdhfaskd://slkdfs';
 
 var linker = new DeepLinker({
-    onIgnored: function() {
+    onFail: function() {
         console.log('browser failed to respond to the deep link');
     },
-    onFallback: function() {
+    onCancel: function() {
         console.log('dialog hidden or user returned to tab');
     },
     onReturn: function() {

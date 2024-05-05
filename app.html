@@ -11,9 +11,9 @@
 <script defer>
 
     const linker = new DeepLinker({
-        onIgnored: () => window.location.href = 'https://www.truetourism.fr',
-        onFallback: () => window.location.href = 'https://www.truetourism.fr/store',
-        onReturn: () => window.location.href = 'https://www.truetourism.fr'
+        onFail: () => window.location.href = '/store',
+        onReturn: () => window.location.href = '/',
+        onCancel: () => window.location.href = '/',
     })
 
     //const redirectionParam = getParameterByName('redirect');
