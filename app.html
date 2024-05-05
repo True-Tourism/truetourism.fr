@@ -9,14 +9,11 @@
 </head>
 <body>
 <script defer>
-    const homeRedirection = () => {
-        window.location.href = 'https://www.truetourism.fr';
-    }
 
     const linker = new DeepLinker({
-        onIgnored: homeRedirection,
-        onFallback: homeRedirection,
-        onReturn: homeRedirection
+        onIgnored: () => window.location.href = 'https://www.truetourism.fr',
+        onFallback: () => window.location.href = 'https://www.truetourism.fr/store',
+        onReturn: () => window.location.href = 'https://www.truetourism.fr'
     })
 
     //const redirectionParam = getParameterByName('redirect');
