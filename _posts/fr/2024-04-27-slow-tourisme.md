@@ -2,7 +2,7 @@
 title: "Le slow tourisme: redécouvrir le plaisir du voyage sans pression à Marseille et ses alentours"
 excerpt: "Dans notre ère où l’information doit être accessible partout et rapidement, le concept du slow tourisme émerge comme une bouffée d’air frais pour les voyageurs en quête d’authenticité et de détente. À Marseille et dans ses environs, cette approche trouve une résonance particulière, offrant une manière unique d’explorer la région à un rythme plus humain, tout en savourant chaque instant. On le sait, dans le sud, on aime vivre la vie piano piano, au chant des cigales…"
 image: /assets/images/shooting-photo-001.jpeg
-date: 2024-04-29
+date: 2024-05-05
 lang: fr
 layout: post
 ---
