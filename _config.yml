@@ -19,16 +19,17 @@ plugins:
   - jekyll-polyglot
   - jekyll-seo-tag
 
+# Seo
 title: "True Tourism"
 tagline: "La bonne façon de visiter"
 description: "True Tourism est une plateforme de réservation de visites guidées et d'activités touristiques en ligne. Nous proposons des visites guidées, des activités et des expériences uniques dans le monde entier. Réservez directement auprès des guides locaux et des agences de voyage."
-
-# practical values langsep are "|", "•", "·", "-", "–"
-langsep: "-"
+image: "/assets/illustration_mobile.png"
 
 # Polyglot
 default_lang: 'fr'
 languages: ['fr', 'en', 'es']
+# practical values langsep are "|", "•", "·", "-", "–"
+langsep: "-"
 # Custom variables
 languages_aliases:
   fr: français
