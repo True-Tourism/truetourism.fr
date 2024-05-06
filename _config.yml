@@ -21,10 +21,7 @@ plugins:
 
 title: "True Tourism"
 tagline: "La bonne façon de visiter"
-description:
-  fr: "True Tourism est une plateforme de réservation de visites guidées et d'activités touristiques en ligne. Nous proposons des visites guidées, des activités et des expériences uniques dans le monde entier. Réservez directement auprès des guides locaux et des agences de voyage."
-  en: "True Tourism is an online booking platform for guided tours and tourist activities. We offer unique guided tours, activities and experiences worldwide. Book directly with local guides and travel agencies."
-  es: "True Tourism es una plataforma de reserva en línea para visitas guiadas y actividades turísticas. Ofrecemos visitas guiadas, actividades y experiencias únicas en todo el mundo. Reserve directamente con guías locales y agencias de viajes."
+description: "True Tourism est une plateforme de réservation de visites guidées et d'activités touristiques en ligne. Nous proposons des visites guidées, des activités et des expériences uniques dans le monde entier. Réservez directement auprès des guides locaux et des agences de voyage."
 
 # practical values langsep are "|", "•", "·", "-", "–"
 langsep: "-"
