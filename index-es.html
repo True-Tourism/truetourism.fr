@@ -8,6 +8,7 @@ permalink_lang:
 lang: es
 page_id: home
 ---
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -201,46 +202,8 @@ page_id: home
     </div>
 </section>
 -->
-<footer class="bg-white">
-    <div class="container mx-auto px-8 py-4">
 
-        <div class="w-full flex flex-col items-center justify-center py-4">
-            {% for lang in site.languages %}
+{% include footer.html %}
 
-            {% if lang == page.lang %} {% continue %} {% endif %}
-
-            {% capture lang_href %}{{site.baseurl}}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if page.permalink_lang[lang] != '/' %}{{page.permalink_lang[lang]}}{% endif %}{% endcapture %}
-
-            <a class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="{% if lang_href == '/' %}{{ site.url }}{% else %}{{ lang_href }}{% endif %}">
-                {{ site.languages_aliases[lang] }}
-            </a>
-            {% endfor %}
-        </div>
-
-        <div class="w-full flex flex-col md:flex-row items-center justify-center">
-
-            <a class="px-4" href="https://www.tiktok.com/@truetourism">
-                <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok">
-            </a>
-            <a class="px-4" href="https://www.instagram.com/true.tourism/">
-                <img class="h-12 w-12" src="/assets/instagram.svg" alt="Instagram">
-            </a>
-
-            <a class="px-4" href="https://www.linkedin.com/company/truetourismfr">
-                <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn">
-            </a>
-
-        </div>
-
-        <div class="w-full flex flex-col items-center justify-center py-4">
-            <a id="contact" class="no-underline hover:underline text-alternative hover:text-green-500 px-8"
-               href="mailto:communication@truetourism.fr">{{ site.data["index"].contact }}</a>
-            <a id="legal" href="{{ site.url }}/legal"
-               class="no-underline hover:underline text-alternative hover:text-green-500 px-8">{{ site.data["index"].legal }}</a>
-        </div>
-
-    </div>
-</footer>
 </body>
 </html>
