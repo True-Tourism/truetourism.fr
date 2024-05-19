@@ -19,6 +19,10 @@ plugins:
   - jekyll-polyglot
   - jekyll-seo-tag
 
+collections:
+  guide:
+    permalink: /:collection/:b64uuid
+
 # Seo
 title: "True Tourism"
 tagline: "La bonne façon de visiter"
