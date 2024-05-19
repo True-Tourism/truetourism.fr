@@ -55,6 +55,7 @@ exclude_from_localization: [
   'favicon.ico',
   'Gemfile',
   'Gemfile.lock',
+  'guide.html',
   'package.json',
   'package-lock.json',
   'readme.md',

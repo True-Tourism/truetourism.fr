@@ -13,12 +13,15 @@
   const b64uuid = window.location.pathname.split('/').pop();
 
   if(!b64uuid || b64uuid.length !== 22) {
+    console.error('Invalid guide id, redirecting to home');
     window.location.href = '/';
   }
 
+  const guideId = base64UrlToUuid(b64uuid);
+
   const params = {
     type: 'guideProfile',
-    guideId: base64UrlToUuid(b64uuid),
+    guideId,
   }
 
   const linker = new DeepLinker({
