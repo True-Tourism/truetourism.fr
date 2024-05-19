@@ -1,3 +1,7 @@
+---
+layout: null
+collection: guide
+---
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,6 +14,7 @@
 </head>
 <body>
 <script defer>
+  console.log('pathname', window.location.pathname);
   const b64uuid = window.location.pathname.split('/').pop();
 
   if(!b64uuid || b64uuid.length !== 22) {
