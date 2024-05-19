@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Votre guide True Tourism !</title>
+
+    <script type="text/javascript" src="/js/deepLinker.js"></script>
+    <script type="text/javascript" src="/js/b64.js"></script>
+</head>
+<body>
+<script defer>
+  const b64uuid = window.location.pathname.split('/').pop();
+
+  if(!b64uuid || b64uuid.length !== 22) {
+    window.location.href = '/';
+  }
+
+  const params = {
+    type: 'guideProfile',
+    guideId: base64UrlToUuid(b64uuid),
+  }
+
+  const linker = new DeepLinker({
+    onFail: () => window.location.href = '/',
+    onReturn: () => window.location.href = '/',
+    onCancel: () => window.location.href = '/',
+  })
+
+  const url = `true-tourism://app?${Object.keys(params).map(key => `${key}=${params[key]}`).join('&')}`;
+
+  linker.openURL(url);
+</script>
+</body>
+</html>
