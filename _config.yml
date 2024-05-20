@@ -21,7 +21,7 @@ plugins:
 
 collections:
   guide:
-    b64uuid: true
+    permalink: /:collection/:name
 
 # Seo
 title: "True Tourism"
