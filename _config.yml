@@ -21,7 +21,7 @@ plugins:
 
 collections:
   guide:
-    permalink: /:basename/
+    permalink: /guide/:path
 
 # Seo
 title: "True Tourism"
@@ -55,7 +55,7 @@ exclude_from_localization: [
   'favicon.ico',
   'Gemfile',
   'Gemfile.lock',
-  'guide.html',
+  'guide.md',
   'package.json',
   'package-lock.json',
   'readme.md',
