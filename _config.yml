@@ -21,7 +21,7 @@ plugins:
 
 collections:
   guide:
-    permalink: /:collection/:name
+    permalink: /:basename/
 
 # Seo
 title: "True Tourism"
