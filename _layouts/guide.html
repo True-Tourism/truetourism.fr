@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tourisme, voyage, guide, visite, visite guidée, guide touristique, guide local, guide local, marseille, aix-en-provence, provence, côte d'azur, côte d'azur, france, europe, monde, application, mobile, application mobile, ap
+    plication de voyage">
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <title>{{ page.displayName }} - True Tourism</title>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/deepLinker.js"></script>
+    <script type="text/javascript" src="/js/b64.js"></script>
+
+    {% seo %}
+</head>
+
+<script defer>
+  // Url : /guides/b0b9a01b-e989-4f9d-87fa-2326e0ec9b34.html
+  const guideId = window.location.pathname.replace('.html', '').split('/').pop();
+
+  const params = {
+    type: 'guideProfile',
+    guideId,
+  }
+
+  const linker = new DeepLinker({
+    onFail: () => {
+      alert("Impossible d'ouvrir l'application, vous allez être redirigé");
+      window.location.href = '/store';
+    },
+  })
+
+  const url = `true-tourism://app?${Object.keys(params).map(key => `${key}=${params[key]}`).join('&')}`;
+
+  const openApp = () => linker.openURL(url);
+
+  const showSeeMoreButton = () => {
+    const bio = document.getElementById('bio');
+
+    const isOverflow = bio.scrollHeight > bio.offsetHeight;
+
+    if(!isOverflow) {
+      return;
+    }
+
+    const button = document.getElementById('bioSeeMore');
+    button.classList.remove('hidden');
+  }
+  const toggleSeeMore = () => {
+    const bio = document.getElementById('bio');
+
+    const button = document.getElementById('bioSeeMore');
+
+    const activated = bio.classList.toggle('max-h-36');
+
+    if (activated) {
+      button.innerHTML = 'Voir plus';
+      // Scroll to top of the screen
+      window.scrollTo({top: 0, behavior: 'smooth'});
+      //document.getElementById('displayName').scrollIntoView();
+    } else {
+      button.innerHTML = 'Voir moins';
+    }
+  }
+
+  window.onload = showSeeMoreButton;
+</script>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+{% include header.html %}
+
+<section>
+    <div class="w-full md:w-2/3 xxl:w-1/3 container flex flex-col items-center mx-auto px-2 pt-4">
+        <img class="w-40 h-40 object-cover object-center mb-6 rounded-full mx"
+             src="https://wovnitykmnyslxnofpvc.storage.eu-central-1.nhost.run/v1/files/{{ page.avatarUrl }}?w=300"
+             alt="{{ page.title }} image de profile">
+
+        <h1 id="displayName" class="py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-alternative break-words">
+            {{ page.displayName }}</h1>
+
+
+        {% assign bio = page.bio | newline_to_br %}
+        {% assign bio = bio | split: '<br />' %}
+
+        <div id="bio" class="space-y-1 max-h-36 overflow-hidden">
+        {% for line in bio %}
+            <p class="whitespace-pre-line">{{ line }}</p>
+        {% endfor %}
+        </div>
+
+        <button class="hidden bg-gray-400 text-white active:bg-green-600 uppercase text-sm px-4 py-2 mt-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                style="transition: all 0.15s ease 0s;"
+                type="button" id="bioSeeMore" onclick="toggleSeeMore()">
+            Voir plus
+        </button>
+    </div>
+</section>
+
+<section class="py-2">
+    <div class="w-full md:w-2/3 xxl:w-1/3 container flex flex-col items-center mx-auto px-2 pt-4 pb-12">
+        <h2 class="py-2 align-baseline text-3xl md:text-5xl font-bold leading-tight text-alternative break-words">
+            {{ site.data["index"].visits }}</h2>
+
+        <div class="flex flex-col w-full align-start gap-2">
+
+            {% for visit in page.visits %}
+            <div class="flex w-full h-44 align-start items-center bg-white shadow-md rounded-lg px-4 py-2">
+
+                <img class="h-40 w-40 rounded object-center object-cover"
+                     src="https://wovnitykmnyslxnofpvc.storage.eu-central-1.nhost.run/v1/files/{{ visit.cover_image }}?w=300"
+                     alt="{{ visit.title }} image de présentation">
+
+                <div class="flex flex-col items-start h-full pl-4">
+                    <h2 class="w-full text-lg font-medium my-0">
+                        {{ visit.title }}
+                    </h2>
+
+                    <p class="w-full text-sm text-left text-gray-500 mb-1">
+                        {{ visit.postal_code }}, {{ visit.city }}
+                    </p>
+
+                    <p class="max-h-36 text-sm overflow-hidden">
+                        {{ visit.description }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="w-full md:w-2/3 xxl:w-1/3 container flex flex-col items-center mx-auto px-2 pt-4 pb-12">
+        <button class="bg-alternative text-white active:bg-green-600 font-bold uppercase text-sm px-4 py-2 mt-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                style="transition: all 0.15s ease 0s;"
+                type="button" onclick="openApp()">
+            {{ site.data["index"].open-in-the-app }}
+        </button>
+    </div>
+
+</section>
+
+{% include footer.html %}
+
+</body>
+</html>
