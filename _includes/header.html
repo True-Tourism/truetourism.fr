@@ -1,9 +1,12 @@
 <header class="bg-primary py-4">
-  <div class="container mx-auto flex justify-between items-center px-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
     <a class="text-2xl font-bold text-white hover:text-zinc-400"
        href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}">TRUE TOURISM</a>
     <nav>
       <ul class="flex">
+        <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}guides">
+          {{ site.data["index"].guides }}</a>
+        </li>
         <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="{{ site.url }}/{% if page.lang != site.default_lang %}{{ page.lang }}/{% endif %}posts">
           {{ site.data["index"].posts }}</a>
         </li>
