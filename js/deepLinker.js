@@ -70,6 +70,12 @@ function DeepLinker(options) {
         }, 1000);
 
         window.location = url;
+
+        setTimeout(function() {
+            if(!window.location.href.includes(url) && options.onFail) {
+                options.onFail();
+            }
+        }, 1000);
     };
 }
 
