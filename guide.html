@@ -10,6 +10,7 @@
 </head>
 <body>
 <script defer>
+  // Using b64 is a stateless way to shorten the URL
   const b64uuid = window.location.search.replace('?', '');
 
   if(!b64uuid || b64uuid.length !== 22) {
@@ -19,20 +20,8 @@
 
   const guideId = base64UrlToUuid(b64uuid);
 
-  const params = {
-    type: 'guideProfile',
-    guideId,
-  }
-
-  const linker = new DeepLinker({
-    onFail: () => window.location.href = '/',
-    onReturn: () => window.location.href = '/',
-    onCancel: () => window.location.href = '/',
-  })
-
-  const url = `true-tourism://app?${Object.keys(params).map(key => `${key}=${params[key]}`).join('&')}`;
-
-  linker.openURL(url);
+  // redirect to /guides/:guideId
+  window.location.href = `/guides/${guideId}`;
 </script>
 </body>
 </html>
