@@ -11,7 +11,19 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://www.truetourism.fr/es/" />
     </url>
 
-    <!-- Legal Terms -->
+
+    <url>
+        <loc>https://www.truetourism.fr/guides</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.truetourism.fr/en/guides" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.truetourism.fr/es/guides" />
+    </url>
+
+    <url>
+        <loc>https://www.truetourism.fr/posts</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.truetourism.fr/en/posts" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.truetourism.fr/es/posts" />
+    </url>
+
     <url>
         <loc>https://www.truetourism.fr/legal</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.truetourism.fr/en/legal" />
