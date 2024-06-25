@@ -32,11 +32,11 @@
 
     function fetchCommissionRate(duration, type) {
         const commissions = {
-            'ONE_HOUR': {'PUBLIC': 0.35, 'PRIVATE': 0.55},
-            'TWO_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.47},
+            'ONE_HOUR': {'PUBLIC': 0.35, 'PRIVATE': 0.35},
+            'TWO_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.35},
             'THREE_HOURS': {'PUBLIC': 0.35, 'PRIVATE': 0.35},
-            'HALF_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.33},
-            'ENTIRE_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.3}
+            'HALF_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.35},
+            'ENTIRE_DAY': {'PUBLIC': 0.35, 'PRIVATE': 0.35}
         };
 
         return commissions[duration][type];
