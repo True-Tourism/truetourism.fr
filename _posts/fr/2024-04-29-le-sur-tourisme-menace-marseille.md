@@ -23,6 +23,6 @@ En tant que marseillais, nous le savons bien et le constatons chaque été, de n
 
 ## Vers un tourisme responsable
 Les retombées économiques du tourisme sont indéniables, mais elles doivent être équilibrées avec la préservation de l’environnement et du tissu social. 
-Ainsi, la ville de Marseille doit trouver un équilibre entre développement économique et préservation de son identité et de la qualité de vie de ses habitants. Cela nécessite une **gestion efficace du tourisme** et une prise en compte des besoins et des préoccupations des résidents locaux : Pour palier à cette problématique, notre équipe a développé une app qui permettrait selon nous de mieux gérer ce sur-tourisme : [En savoir plus](https://www.https://www.truetourism.fr/store/)
+Ainsi, la ville de Marseille doit trouver un équilibre entre développement économique et préservation de son identité et de la qualité de vie de ses habitants. Cela nécessite une **gestion efficace du tourisme** et une prise en compte des besoins et des préoccupations des résidents locaux : Pour palier à cette problématique, notre équipe a développé une app qui permettrait selon nous de mieux gérer ce sur-tourisme : [En savoir plus](https://www.truetourism.fr/store/)
 
 
