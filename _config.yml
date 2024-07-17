@@ -22,6 +22,9 @@ plugins:
 collections:
   guides:
     output: true
+  posts:
+    output: true
+    permalink: /:collection/:title
 
 # Seo
 title: "True Tourism"
