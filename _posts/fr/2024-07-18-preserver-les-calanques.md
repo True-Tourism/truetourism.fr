@@ -1,5 +1,5 @@
 ---
-title: "L’Importance de Préserver le Patrimoine et les Calanques de Marseille"
+title: "L’Importance de préserver le patrimoine et les Calanques de Marseille"
 excerpt: "Marseille est une ville riche en histoire et en beauté naturelle, et parmi ses trésors les plus précieux se trouvent les calanques. Ces formations rocheuses spectaculaires, s’étendant le long de la côte méditerranéenne, et nous offrent des paysages époustouflants. Les calanques abritent une biodiversité exceptionnelle, et préserver ce patrimoine naturel est crucial pour les générations futures, et cela commence par adopter des comportements respectueux de l’environnement."
 image: /assets/images/image-libre-calanques-001.jpeg
 date: 2024-07-21 
@@ -17,27 +17,27 @@ Les calanques de Marseille ne sont pas seulement un attrait touristique; elles s
 
 ![Calanques](/assets/images/image-libre-calanques-002.jpeg)
 
-## **Les Bons Gestes à Adopter**
+## Les bons gestes à adopter
 Pour préserver la beauté et l’intégrité des calanques, il est essentiel de suivre quelques règles simples mais efficaces :
 
-**Respecter les Sentiers Balises** : Ne sortez pas des sentiers balisés pour éviter de piétiner la végétation fragile et de perturber les habitats naturels.
+**Respecter les sentiers balisés** : Ne sortez pas des sentiers balisés pour éviter de piétiner la végétation fragile et de perturber les habitats naturels.
 
-**Ramasser Ses Déchets** : Emportez toujours vos déchets avec vous. Les poubelles ne sont pas toujours disponibles sur place, et même les petits détritus peuvent causer des dégâts significatifs.
+**Ramasser ses déchets** : Emportez toujours vos déchets avec vous. Les poubelles ne sont pas toujours disponibles sur place, et même les petits détritus peuvent causer des dégâts significatifs.
 
-**Utiliser des Produits Écologiques** : Privilégiez les crèmes solaires et les produits de soins respectueux de l’environnement pour éviter de polluer les eaux cristallines.
+**Utiliser des produits écologiques** : Privilégiez les crèmes solaires et les produits de soins respectueux de l’environnement pour éviter de polluer les eaux cristallines.
 
-**Observer sans Perturber** : Admirez la faune et la flore sans les toucher ni les déplacer. Le respect de la vie sauvage est primordial pour maintenir l’équilibre des écosystèmes.
+**Observer sans perturber** : Admirez la faune et la flore sans les toucher ni les déplacer. Le respect de la vie sauvage est primordial pour maintenir l’équilibre des écosystèmes.
 
-## **Les Gestes à Éviter**
+## Les gestes à éviter
 Certaines actions peuvent sembler anodines mais ont des conséquences graves sur l’environnement des calanques :
 
-**Ne Pas Allumer de Feux** : Le risque d’incendie est extrêmement élevé dans les calanques. Il est interdit d’allumer des feux, même pour un pique-nique.
+**Ne pas allumer de feux** : Le risque d’incendie est extrêmement élevé dans les calanques. Il est interdit d’allumer des feux, même pour un pique-nique.
 
-**Éviter le Bruit Excessif** : Le bruit peut déranger la faune locale. Essayez de profiter de la quiétude des lieux sans perturber leur sérénité.
+**Éviter le bruit excessif** : Le bruit peut déranger la faune locale. Essayez de profiter de la quiétude des lieux sans perturber leur sérénité.
 
-**Ne Pas Cueillir de Plantes** : Les plantes des calanques sont souvent rares et endémiques. Ne les cueillez pas pour préserver la biodiversité locale.
+**Ne pas cueillir de plantes** : Les plantes des calanques sont souvent rares et endémiques. Ne les cueillez pas pour préserver la biodiversité locale.
 
-**Éviter la Pollution des Eaux** : Ne jetez rien dans les eaux et évitez d’utiliser des produits chimiques qui pourraient s’y retrouver.
+**Éviter la pollution des eaux** : Ne jetez rien dans les eaux et évitez d’utiliser des produits chimiques qui pourraient s’y retrouver.
 
 ## L’Engagement de True Tourism
 
