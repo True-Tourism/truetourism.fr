@@ -2,7 +2,7 @@
 title: Visite guidée Marseille
 permalink: /landing
 lang: fr
-page_id: application
+page_id: landing
 layout: landing
 ---
 
