@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="tourisme, voyage, guide, visite, visite guidée, guide touristique, guide local, guide local, marseille, aix-en-provence, provence, côte d'azur, côte d'azur, france, europe, monde, application, mobile, application mobile, ap
+    plication de voyage">
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    <script defer src="/js/animation.js"></script>
+
+    {% seo %}
+</head>
+
+<style>
+    .landing-container a {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .landing-container p {
+        margin: 0.25rem 0;
+    }
+
+    .landing-container h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+
+    .landing-container h4 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0.5rem 0;
+    }
+
+    .landing-container h5 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0.25rem 0;
+    }
+
+    .landing-container ul {
+        list-style-type: disc;
+        margin-left: 1rem;
+    }
+
+
+    .landing-container img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 0.25rem;
+    }
+</style>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+{% include header.html %}
+
+<section class="py-6">
+    <div class="w-full md:w-2/3 xxl:w-1/3 container flex flex-col items-center mx-auto px-2 pt-4 pb-12 animated-hidden">
+        <h1 class="hidden">{{ page.title }}</h1>
+
+        <div class="flex flex-col my-0 sm:my-4 text-justify landing-container">
+            {{ content }}
+        </div>
+    </div>
+</section>
+
+{% include footer.html %}
+
+</body>
+</html>
