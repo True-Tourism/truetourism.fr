@@ -8,7 +8,7 @@ module.exports = {
         'primary': '#00B382',
         'secondary': '#279884',
         'alternative' : '#000D46',
-        'detail': '#F1A34F',
+        'detail': '#ff7700',
       }
     },
     fontFamily: {
