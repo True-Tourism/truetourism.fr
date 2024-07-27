@@ -6,6 +6,8 @@ page_id: landing
 layout: landing
 ---
 
+![Balade aux Calanques](/assets/images/balade-calanques.jpeg)
+
 ### Pourquoi découvrir Marseille avec un guide touristique ?
 
 Marseille, la plus ancienne ville de France, regorge de trésors cachés et d'histoires fascinantes. **Visiter Marseille** avec un **guide touristique** offre une expérience enrichissante qui va bien au-delà des simples sites touristiques.
@@ -21,11 +23,12 @@ Prêt à explorer Marseille autrement ? Laissez-vous guider à travers ses ruell
 
 ### Pourquoi choisir une visite guidée à Marseille ?
 
+![Marseille lettres sur le Vieux-Port](/assets/images/port-marseille.jpeg)
+
 Découvrir Marseille en compagnie d'un guide touristique présente de nombreux avantages. Non seulement vous gagnez en temps et en efficacité, mais vous enrichissez également votre expérience de voyage. Voici pourquoi une visite guidée est le meilleur moyen de découvrir cette ville fascinante.
 
 
-#### Les avantages d’une Visite Guidée
-
+#### Les avantages d’une visite guidée
 
 ##### Expérience enrichissante
 
@@ -53,6 +56,8 @@ Choisir une visite guidée à Marseille, c'est s'offrir une immersion totale dan
 
 
 ### Quels sont les sites incontournables à visiter à Marseille ?
+
+![Notre-Dame de la Garde](/assets/images/notre-dame-de-la-garde.jpeg)
 
 Marseille regorge de lieux emblématiques qui méritent une visite lors de votre séjour. En optant pour une visite guidée, vous êtes assuré de ne rien manquer des trésors de la ville. Voici les principaux sites incontournables de Marseille à découvrir.
 
@@ -113,6 +118,8 @@ Tous ces lieux uniques dans Marseille, offrent un aperçu complet de la richesse
 
 ### Quels sont les différents thèmes de visites guidées à Marseille ?
 
+![Le couvent Belle de Mai](/assets/images/couvent-belle-de-mai.jpeg)
+
 Marseille propose une variété de visites guidées thématiques pour satisfaire tous les intérêts. Que vous soyez passionné d'histoire, de gastronomie, de culture ou de nature, vous trouverez une visite qui répond à vos attentes. Voici les principaux thèmes de visites guidées à Marseille.
 
 
@@ -172,6 +179,8 @@ Les visites guidées thématiques à Marseille offrent une multitude de façons 
 
 ### Comment trouver un bon guide touristique à Marseille ?
 
+![Navettes de Marseille](/assets/images/shooting-photo-002.jpeg)
+
 Choisir le bon guide touristique peut transformer votre visite de Marseille en une expérience inoubliable. Un guide compétent et passionné peut vous faire découvrir les aspects les plus fascinants de la ville. Voici quelques conseils pour trouver le guide parfait pour votre aventure marseillaise.
 
 
@@ -197,6 +206,8 @@ La capacité à raconter des histoires est essentielle pour un guide touristique
 
 Les guides de True Tourism sont sélectionnés pour leur **connaissance approfondie** de l'histoire et de la culture marseillaise, ainsi que pour leur capacité à rendre chaque visite unique et engageante. Que vous soyez intéressé par les trésors historiques de la ville, ses délices culinaires ou ses merveilles naturelles, True Tourism propose des visites thématiques adaptées à tous les goûts.
 
+![Application True Tourism](/assets/mockup.svg){: .mockup}
+
 En outre, True Tourism s'engage à promouvoir un tourisme **durable et respectueux de l'environnement**. Chaque visite est conçue pour minimiser l'impact sur la communauté locale et l'écosystème, tout en maximisant l'enrichissement culturel et personnel des visiteurs. Avec True Tourism, vous découvrez Marseille de manière authentique et responsable, tout en soutenant les initiatives locales et en contribuant au développement durable de la région.
 
 Choisir True Tourism, c'est opter pour une **expérience de voyage enrichissante**, basée sur le respect, la découverte et le partage.
@@ -205,6 +216,8 @@ Alors, laissez-vous guider par les experts de True Tourism et vivez une aventure
 
 
 ### Quels sont les conseils pratiques pour profiter pleinement de votre visite à Marseille ?
+
+![Visite sous le Pharo](/assets/images/shooting-photo-003.jpeg)
 
 Pour tirer le meilleur parti de votre visite à Marseille, il est essentiel de bien se préparer. Voici quelques conseils pratiques pour vous aider à planifier une journée de découverte réussie dans cette ville fascinante.
 
@@ -240,10 +253,10 @@ Pour une journée de visite réussie, assurez-vous d'apporter :
 
 Marseille est généralement une ville sûre, mais il est toujours bon de prendre quelques précautions :
 
-* Évitez de montrer des objets de valeur en public.
-* Faites attention à vos affaires personnelles, surtout dans les endroits très fréquentés.
+* Évitez de montrer des **objets de valeur** en public.
+* Faites **attention à vos affaires personnelles**, surtout dans les endroits très fréquentés.
 * Restez dans les zones bien éclairées et animées, surtout le soir.
-* Suivez les conseils de votre guide touristique et respectez les consignes locales.
+* Suivez les conseils de votre guide touristique et **respectez les consignes locales**.
 * Restez décontracté en toute circonstance.
 
 
@@ -262,6 +275,8 @@ En suivant ces conseils pratiques, vous êtes assuré de vivre une visite agréa
 
 ### Pourquoi choisir Marseille pour votre prochaine aventure estivale ?
 
+![Malmousque](/assets/images/malmousque.jpeg)
+
 Marseille, avec son riche patrimoine historique, sa **culture vibrante**, et sa **gastronomie alléchante**, est une destination idéale pour des vacances inoubliables. En optant pour une **visite guidée**, vous aurez l'opportunité d'explorer les secrets bien gardés de la ville, de comprendre son passé fascinant, et de vivre des moments uniques.
 
 Imaginez-vous flâner dans les ruelles pittoresques du **Quartier du Panier**, découvrir les légendes du **Vieux-Port**, ou encore savourer une délicieuse **bouillabaisse** dans un restaurant local. Avec un guide expérimenté, chaque coin de rue devient une histoire à découvrir, chaque plat dégusté une tradition à partager.
@@ -271,4 +286,3 @@ En suivant nos **conseils pratiques**, vous êtes assuré de profiter pleinement
 Alors, prêt à **explorer Marseille** cet été et à vous laisser guider à travers ses trésors ? Que vous soyez passionné d’histoire, amateur de bonne cuisine, ou simplement curieux de découvrir une nouvelle destination, Marseille a tout ce qu’il faut pour vous séduire.
 
 **Et vous, quelle sera votre prochaine découverte marseillaise ?**
-
