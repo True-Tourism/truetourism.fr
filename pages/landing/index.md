@@ -4,6 +4,7 @@ permalink: /landing
 lang: fr
 page_id: landing
 layout: landing
+image: /assets/images/balade-calanques.jpeg
 ---
 
 ![Balade aux Calanques](/assets/images/balade-calanques.jpeg)
