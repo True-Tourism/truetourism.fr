@@ -13,12 +13,17 @@
 
     <url>
         <loc>https://www.truetourism.fr/landing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.truetourism.fr/en/landing" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.truetourism.fr/es/landing" />
     </url>
 
     <url>
         <loc>https://www.truetourism.fr/posts</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://www.truetourism.fr/en/posts" />
         <xhtml:link rel="alternate" hreflang="es" href="https://www.truetourism.fr/es/posts" />
+    </url>
+    <url>
+        <loc>https://www.truetourism.fr/posts/marseille-ville-olympique</loc>
     </url>
     <url>
         <loc>https://www.truetourism.fr/posts/preserver-les-calanques</loc>
