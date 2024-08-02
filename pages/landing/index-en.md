@@ -34,6 +34,7 @@ Discovering Marseille with a **tour guide** offers numerous advantages. Not only
 
 An experienced tour guide provides a **unique perspective** on Marseille. With their in-depth knowledge and **captivating anecdotes**, you learn about the city’s history, culture, and secrets. Guides know how to make each tour **lively** and **interactive**, turning a simple walk into an **educational adventure**.
 
+
 #### Access to exclusive information
 
 Tour guides possess **privileged information** about the places you visit. They can show you hidden gems and share stories not found in books or online. For example, you’ll learn why the Basilica of Notre-Dame de la Garde is called "la Bonne Mère" by Marseillais and the legends surrounding the Vieux-Port.
