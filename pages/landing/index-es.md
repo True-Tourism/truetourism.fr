@@ -4,6 +4,7 @@ permalink: /landing
 lang: es
 page_id: landing
 layout: landing
+image: /assets/images/malmousque.jpeg
 ---
 
 ![caminar hasta les calanques](/assets/images/balade-calanques.jpeg)
