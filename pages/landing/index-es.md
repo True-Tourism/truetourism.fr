@@ -1,6 +1,6 @@
 ---
 title: Visita guiada a Marsella
-permalink: /landing
+permalink: /visite-guidee-marseille
 lang: es
 page_id: landing
 layout: landing
@@ -10,6 +10,8 @@ image: /assets/images/malmousque.jpeg
 ![caminar hasta les calanques](/assets/images/balade-calanques.jpeg)
 
 ## ¿Por qué descubrir Marsella con un guía turístico?
+
+{% include cta.html %}
 
 Marsella, la ciudad más antigua de Francia, está llena de **tesoros ocultos** e **historias fascinantes**. Visitar Marsella con un guía ofrece una experiencia rica que va mucho más allá del simple turismo.
 
