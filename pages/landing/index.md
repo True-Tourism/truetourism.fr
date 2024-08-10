@@ -1,6 +1,6 @@
 ---
 title: Visite guidée Marseille
-permalink: /landing
+permalink: /visite-guidee-marseille
 lang: fr
 page_id: landing
 layout: landing
@@ -10,6 +10,8 @@ image: /assets/images/balade-calanques.jpeg
 ![Balade aux Calanques](/assets/images/balade-calanques.jpeg)
 
 ## Pourquoi découvrir Marseille avec un guide touristique ?
+
+{% include cta.html %}
 
 Marseille, la plus ancienne ville de France, regorge de trésors cachés et d'histoires fascinantes. **Visiter Marseille** avec un **guide touristique** offre une expérience enrichissante qui va bien au-delà des simples sites touristiques.
 
