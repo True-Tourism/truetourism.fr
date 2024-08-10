@@ -2,17 +2,14 @@
   "appLinks": {
     "details": [
       {
-        "appIDs": [
-          "W67J76GCDD.fr.truetourism.app"
-        ],
+        "appIDs": ["W67J76GCDD.fr.truetourism.app"],
         "components": [
-          {
-            "/": "/app"
-          }
+          {"/": "/app"}
         ]
       }
     ]
   },
-  "webCredentials": {},
-  "appclips": {}
+  "webCredentials": {
+    "apps": ["W67J76GCDD.fr.truetourism.app"]
+  }
 }
