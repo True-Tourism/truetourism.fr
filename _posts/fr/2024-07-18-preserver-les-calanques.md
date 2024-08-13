@@ -2,7 +2,7 @@
 title: "L’Importance de préserver le patrimoine et les Calanques de Marseille"
 excerpt: "Marseille est une ville riche en histoire et en beauté naturelle, et parmi ses trésors les plus précieux se trouvent les calanques. Ces formations rocheuses spectaculaires, s’étendant le long de la côte méditerranéenne, et nous offrent des paysages époustouflants. Les calanques abritent une biodiversité exceptionnelle, et préserver ce patrimoine naturel est crucial pour les générations futures, et cela commence par adopter des comportements respectueux de l’environnement."
 image: /assets/images/image-libre-calanques-001.jpeg
-date: 2024-07-21 
+publish_date: 2024-07-21 
 lang: fr
 layout: post
 ---
