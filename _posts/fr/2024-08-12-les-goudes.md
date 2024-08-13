@@ -60,3 +60,5 @@ Les Goudes sont un véritable joyau caché, un village qui a su conserver son â
 Mais Les Goudes sont aussi un lieu fragile, qui nécessite d'être protégé. La préservation de ce site exceptionnel est une responsabilité partagée, entre les habitants, les autorités et les visiteurs. En respectant les règles, en soutenant les initiatives locales, et en adoptant un comportement responsable, chacun peut contribuer à préserver la magie des Goudes pour les générations futures.
 
 **Que vous soyez un habitant de Marseille, un visiteur de passage, ou un amoureux de la nature, Les Goudes vous invitent à découvrir leur histoire, leur culture et leur beauté. Et pour ceux qui souhaitent aller plus loin, l'application True Tourism propose des visites guidées, animées par des locaux passionnés, pour vous faire découvrir Les Goudes sous un angle nouveau et authentique.**
+
+[Parcourir les visites True Tourism disponibles]([https://www.google.com](https://www.truetourism.fr/store))
