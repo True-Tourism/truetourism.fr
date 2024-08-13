@@ -1,7 +1,7 @@
 ---
 title: "Les Goudes : Un Joyau Caché au Cœur de Marseille"
 excerpt: "Situé à l'extrémité sud de Marseille, Les Goudes est un petit village pittoresque qui semble résister au passage du temps, offrant à ses visiteurs un havre de paix loin de l'agitation urbaine. Ce quartier, souvent décrit comme le bout du monde, est un endroit où la nature brute des calanques se mêle à l'authenticité d'un village de pêcheurs. Bien que faisant partie intégrante de la ville de Marseille, Les Goudes a su conserver une atmosphère unique, presque insulaire, qui charme instantanément quiconque s'y aventure."
-image: /assets/images/image-libre.goudes.001.jpeg
+image: ![Les Goudes](/assets/images/image-libre.goudes.001.jpeg)
 date: 2024-08-12
 lang: fr
 layout: post
@@ -22,7 +22,7 @@ Cependant, cette nature exceptionnelle nécessite d’être protégée. Le parc 
 # Un patrimoine culturel et historique riche
 Les Goudes ne se distinguent pas seulement par leur beauté naturelle, mais aussi par leur riche patrimoine culturel et historique. Le Sémaphore des Goudes, une ancienne station de signalisation maritime, en est un exemple frappant. Construit au XIXe siècle, il servait autrefois à guider les navires entrant dans la rade de Marseille. Aujourd'hui, il est l'un des monuments emblématiques du village, offrant une vue imprenable sur la côte et les îles environnantes.
 
-/assets/images/image-libre-goudes.002.jpeg
+![Les Goudes Semaphore](/assets/images/image-libre-goudes.002.jpeg)
 
 Le village a également joué un rôle important pendant la Seconde Guerre mondiale. Les vestiges de bunkers allemands, disséminés le long de la côte, rappellent cette période sombre de l'histoire. Ces installations militaires, construites pour défendre la côte méditerranéenne, sont aujourd'hui des lieux de mémoire, symboles de la résistance et de la libération.
 
