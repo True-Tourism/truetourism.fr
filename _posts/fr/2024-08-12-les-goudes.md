@@ -2,7 +2,7 @@
 title: "Les Goudes : Un joyau caché au cœur de Marseille"
 excerpt: "Situé à l'extrémité sud de Marseille, Les Goudes est un petit village pittoresque qui semble résister au passage du temps, offrant à ses visiteurs un havre de paix loin de l'agitation urbaine. Ce quartier, souvent décrit comme le bout du monde, est un endroit où la nature brute des calanques se mêle à l'authenticité d'un village de pêcheurs. Bien que faisant partie intégrante de la ville de Marseille, Les Goudes a su conserver une atmosphère unique, presque insulaire, qui charme instantanément quiconque s'y aventure."
 image: /assets/images/image-libre-goudes-001.jpeg
-date: 2024-08-12
+publish_date: 2024-08-15
 lang: fr
 layout: post
 ---
