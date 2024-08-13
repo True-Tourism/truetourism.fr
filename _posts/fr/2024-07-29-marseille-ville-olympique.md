@@ -2,15 +2,10 @@
 title: "Marseille, ville Olympique"
 excerpt: "L'année 2024 marque une étape historique pour Marseille, qui se trouve sous les feux des projecteurs mondiaux en accueillant les Jeux Olympiques pour les épreuves de voile et de football. L'événement promet de transformer la ville en un véritable épicentre de l'excellence sportive et de la célébration culturelle."
 image: /assets/images/shooting-belem-001.jpeg
-date: 2024-08-01
+publish_date: 2024-08-01
 lang: fr
 layout: post
 ---
-
-
-![Marseille : Ville Olympique, entre Terre et Mer](/assets/images/shooting-belem-001.jpeg)
-
-_{{ page.excerpt }}_
 
 ## **L’Arrivée de la Flamme olympique : une entrée triomphale**
 

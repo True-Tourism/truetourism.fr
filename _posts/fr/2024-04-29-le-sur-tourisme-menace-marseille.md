@@ -2,14 +2,10 @@
 title: "Le sur-tourisme menace Marseille et la région PACA"
 excerpt: "De Marseille à la région PACA, les effets du sur-tourisme se font ressentir, mettant en lumière les défis cruciaux auxquels ces destinations sont confrontées. Alors que des flots de visiteurs sont attendus cette année pour découvrir les charmes de la Méditerranée et assister aux Jeux Olympiques de Voiles 2024, les autorités locales et les habitants doivent composer avec les conséquences parfois néfastes de cette popularité croissante."
 image: /assets/images/image-libre-002.jpeg
-date: 2024-06-03
+publish_date: 2024-06-03
 lang: fr
 layout: post
 ---
-
-![Le Sur-Tourisme menace Marseille et la région PACA](/assets/images/image-libre-002.jpeg)
-
-_{{ page.excerpt }}_
 
 ## Le Sur-Tourisme… Kézaco ? 
 Le **sur-tourisme**, c’est un phénomène mondial qui se manifeste par une affluence excessive de touristes dans des destinations populaires, entraînant des conséquences néfastes pour l’**environnement**, la **culture** et la **qualité de vie des habitants**. Et cette problématique, Marseille la connaît bien …! 

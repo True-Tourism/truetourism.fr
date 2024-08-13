@@ -45,7 +45,14 @@ page_id: posts
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
 
             {% assign siteposts = site.posts | where: 'lang',page.lang %}
+            {% assign now = site.time | date: "%s" | plus: 0 -%}
+
             {% for post in siteposts %}
+
+            {% assign post_epoch = post.publish_date | date: "%s" | plus: 0 -%}
+            {% if post_epoch > now %}
+            {% continue %}
+            {% endif %}
 
             <div class="flex flex-col w-full justify-between bg-white shadow-md rounded-lg p-8 mt-8 my-4
                 animated-hidden animated-element hover:bg-gray-100 hover:shadow-lg"
@@ -56,7 +63,7 @@ page_id: posts
                     </h2>
                     <h3 class="text-alternative text-center md:text-left text-xs mb-3">
                         <!-- Edit date format depending on locale here -->
-                        Publié le {{ post.date | date: "%d/%m/%Y" }}
+                        Publié le {{ post.publish_date | date: "%d/%m/%Y" }}
                     </h3>
                     <img class="h-40 w-full object-cover object-center mb-6 rounded mx"
                          src="{{ post.image }}" alt="{{ post.title }} image de présentation">
