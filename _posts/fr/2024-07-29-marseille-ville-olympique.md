@@ -7,11 +7,6 @@ lang: fr
 layout: post
 ---
 
-
-![Marseille : Ville Olympique, entre Terre et Mer](/assets/images/shooting-belem-001.jpeg)
-
-_{{ page.excerpt }}_
-
 ## **L’Arrivée de la Flamme olympique : une entrée triomphale**
 
 Cet été, en juillet et août, Marseille devient le théâtre de deux des épreuves olympiques les plus attendues : le football et la voile. Avec le monde entier ayant les yeux rivés sur notre ville, l'excitation est à son comble. Le stade Vélodrome, rebaptisé pour l'occasion "Le stade de Marseille", accueillera les matchs de football féminins et masculins. Parallèlement, les épreuves de voile se dérouleront dans une marina flambant neuve, le stade nautique du Roucas Blanc, entièrement rénové pour l'événement. Ce complexe symbolise désormais l'excellence sportive nautique marseillaise et accueille déjà des champions internationaux pour leurs entraînements.

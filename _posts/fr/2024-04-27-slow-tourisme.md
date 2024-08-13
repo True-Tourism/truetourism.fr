@@ -7,10 +7,6 @@ lang: fr
 layout: post
 ---
 
-![Le slow tourisme : Redécouvrir le plaisir du voyage sans pression sur Marseille et ses alentours](/assets/images/shooting-photo-001.jpeg)
-
-{{ page.excerpt }}
-
 ## Balades touristiques authentiques
 
 L’une des caractéristiques les plus importantes du slow tourisme est son engagement envers l’authenticité.

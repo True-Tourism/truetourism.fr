@@ -7,11 +7,6 @@ lang: fr
 layout: post
 ---
 
-![L’Importance de Préserver le Patrimoine et les Calanques de Marseille](/assets/images/image-libre-calanques-001.jpeg)
-
-
-_{{ page.excerpt }}_
-
 ## L’Importance des Calanques
 Les calanques de Marseille ne sont pas seulement un attrait touristique; elles sont également des écosystèmes fragiles où cohabitent une faune et une flore uniques. Ces zones protégées sont des refuges pour de nombreuses espèces endémiques et jouent un rôle vital dans la régulation écologique de la région. Malheureusement, la popularité croissante de ces sites peut entraîner des dégradations si des mesures de conservation ne sont pas strictement suivies. 
 

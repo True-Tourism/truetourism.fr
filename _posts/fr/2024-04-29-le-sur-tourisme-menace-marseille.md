@@ -7,10 +7,6 @@ lang: fr
 layout: post
 ---
 
-![Le Sur-Tourisme menace Marseille et la région PACA](/assets/images/image-libre-002.jpeg)
-
-_{{ page.excerpt }}_
-
 ## Le Sur-Tourisme… Kézaco ? 
 Le **sur-tourisme**, c’est un phénomène mondial qui se manifeste par une affluence excessive de touristes dans des destinations populaires, entraînant des conséquences néfastes pour l’**environnement**, la **culture** et la **qualité de vie des habitants**. Et cette problématique, Marseille la connaît bien …! 
 
