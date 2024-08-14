@@ -3,7 +3,11 @@
 : '
 # Exclude test accounts
 query GetGuides {
-  accounts_guide(where: {documents_verified: {_eq: true}, user_id: {_nin: ["cb1b0547-22b3-4fc5-aa80-b705badc1770", "bf1db3e5-b8f3-471a-9efa-3a55a8e0ea1b"]}}) {
+  accounts_guide(where: {
+    documents_verified: {_eq: true},
+    user_id: {_nin: ["cb1b0547-22b3-4fc5-aa80-b705badc1770", "bf1db3e5-b8f3-471a-9efa-3a55a8e0ea1b"]},
+    user: {visits_aggregate: {count: {predicate: {_gt: 0}, filter: {publication_status: {_eq: APPROVED}}}}}
+    }) {
     user_id
     user {
       avatarUrl
@@ -74,7 +78,7 @@ EOV
 ---
 layout: guide
 avatarUrl: $avatarUrl
-displayName: $displayName
+displayName: "$displayName"
 bio: "$bio"
 visits:
 $visits
