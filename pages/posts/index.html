@@ -29,6 +29,20 @@ page_id: posts
 
     <script defer src="/js/animation.js"></script>
 
+    <!-- Remove hidden class on published posts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let now = Math.floor(Date.now() / 1000);
+        let elements = document.querySelectorAll("[data-post-epoch]");
+        elements.forEach(function (element) {
+          let postEpoch = parseInt(element.getAttribute("data-post-epoch"));
+          if (now >= postEpoch) {
+            element.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+
     {% seo %}
 </head>
 
@@ -47,21 +61,15 @@ page_id: posts
             {% assign siteposts = site.posts | where: 'lang',page.lang %}
             {% assign now = site.time | date: "%s" | plus: 0 -%}
 
-            <p id="now" class="hidden">{{ now }}</p>
-
             {% for post in siteposts %}
 
             {% assign post_epoch = post.publish_date | date: "%s" | plus: 0 -%}
-            {% if post_epoch >= now %}
-            {% continue %}
-            {% endif %}
 
             <div class="flex flex-col w-full justify-between bg-white shadow-md rounded-lg p-8 mt-8 my-4
-                animated-hidden animated-element hover:bg-gray-100 hover:shadow-lg"
-                 style="transition: all 0.5s ease 0s;">
+                animated-hidden animated-element hover:bg-gray-100 hover:shadow-lg hidden"
+                 style="transition: all 0.5s ease 0s;"
+                 data-post-epoch="{{ post_epoch }}">
                 <div>
-                    <p class="hidden">{{ post_epoch }}</p>
-
                     <h2 class="text-lg title-font text-center md:text-left font-medium">
                         {{ post.title }}
                     </h2>
