@@ -47,10 +47,12 @@ page_id: posts
             {% assign siteposts = site.posts | where: 'lang',page.lang %}
             {% assign now = site.time | date: "%s" | plus: 0 -%}
 
+            <p id="now" class="hidden">{{ now }}</p>
+
             {% for post in siteposts %}
 
             {% assign post_epoch = post.publish_date | date: "%s" | plus: 0 -%}
-            {% if post_epoch > now %}
+            {% if post_epoch >= now %}
             {% continue %}
             {% endif %}
 
@@ -58,6 +60,8 @@ page_id: posts
                 animated-hidden animated-element hover:bg-gray-100 hover:shadow-lg"
                  style="transition: all 0.5s ease 0s;">
                 <div>
+                    <p class="hidden">{{ post_epoch }}</p>
+
                     <h2 class="text-lg title-font text-center md:text-left font-medium">
                         {{ post.title }}
                     </h2>
