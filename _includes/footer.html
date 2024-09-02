@@ -1,10 +1,5 @@
 <footer class="bg-white">
     <div class="container mx-auto px-8 py-4">
-
-        <div class="w-full flex flex-col items-center justify-center">
-            <h1>{{ page.title | default: site.data['index'].h1 }}</h1>
-        </div>
-
         <div class="w-full flex flex-col items-center justify-center py-4">
             {% for lang in site.languages %}
 
@@ -20,7 +15,6 @@
         </div>
 
         <div class="w-full flex flex-col md:flex-row items-center justify-center">
-
             <a class="px-4" href="https://www.tiktok.com/@truetourism">
                 <img class="h-12 w-12" src="/assets/tiktok.svg" alt="TikTok">
             </a>
@@ -31,7 +25,6 @@
             <a class="px-4" href="https://www.linkedin.com/company/truetourismfr">
                 <img class="h-12 w-12" src="/assets/linkedin.svg" alt="LinkedIn">
             </a>
-
         </div>
 
         <div class="w-full flex flex-col items-center justify-center py-4">
@@ -40,6 +33,5 @@
             <a id="legal" href="{{ site.url }}/legal"
                class="no-underline hover:underline text-alternative hover:text-green-500 px-8">{{ site.data["index"].legal }}</a>
         </div>
-
     </div>
 </footer>
