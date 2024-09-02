@@ -1,5 +1,6 @@
 ---
 title: Visite guidée Marseille
+description: "Découvrez Marseille avec True Tourism: des visites guidées authentiques par des guides locaux passionnés. Explorez, savourez, et vivez l'expérience locale."
 permalink: /visite-guidee-marseille
 lang: fr
 page_id: landing
