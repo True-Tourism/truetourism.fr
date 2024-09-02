@@ -35,12 +35,10 @@ En adoptant une approche plus délibérée du voyage, le slow tourisme offre ég
 Plus qu’une simple énumération d’activités à cocher sur une liste, c’est une invitation à ralentir, à savourer chaque instant et à se laisser imprégner par l’atmosphère unique de Marseille et de ses environs.
 Que ce soit en dégustant une bouillabaisse traditionnelle dans un bistrot local ou en flânant le long du Vieux-Port au coucher du soleil, chaque expérience devient un souvenir à chérir.
 
-<br>
-
 En embrassant le slow tourisme, les voyageurs ont l’opportunité de redécouvrir le véritable plaisir du voyage, loin de l’agitation du monde moderne.
 Avec l'application True Tourism comme compagnon de voyage, Marseille et ses alentours se révèlent comme une destination idéale pour ceux qui cherchent à explorer en profondeur, à se ressourcer et à créer des souvenirs mémorables.
 
-<br>
+&nbsp;
 
 Venez découvrir Marseille et la Provence, à votre rythme, sans la pression du voyage, avec True Tourism pour vous guider.
-Réservez votre visite sur [l'application True Tourism](/store)
+Réservez votre visite sur [l'application True Tourism.](https://www.truetourism.fr/store)

@@ -40,5 +40,7 @@ Chez True Tourism, nous nous engageons à sensibiliser nos visiteurs à l’impo
 
 ![Calanques](/assets/images/image-libre-calanques-003.jpeg)
 
+&nbsp;
+
 Préserver les calanques de Marseille est une responsabilité collective. En adoptant des comportements responsables, nous pouvons tous contribuer à maintenir la beauté et la biodiversité de ces paysages uniques pour les générations à venir. Soyons des visiteurs respectueux et conscients de l’impact de nos actions sur l’environnement.
 
