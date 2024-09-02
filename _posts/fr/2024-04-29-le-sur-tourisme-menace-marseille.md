@@ -11,14 +11,18 @@ layout: post
 Le **sur-tourisme**, c’est un phénomène mondial qui se manifeste par une affluence excessive de touristes dans des destinations populaires, entraînant des conséquences néfastes pour l’**environnement**, la **culture** et la **qualité de vie des habitants**. Et cette problématique, Marseille la connaît bien …! 
 
 ## Les défis de Marseille et la région PACA
-Marseille, sa beauté méditerranéenne et son riche patrimoine culturel, attire des millions de visiteurs chaque année. Malheureusement, cette popularité croissante a mis en évidence les limites de la capacité d’accueil et la gestion difficile des flux touristiques de la ville, au grand désespoir des populations locales.
+
+Marseille, sa beauté méditerranéenne et son riche patrimoine culturel, attire des millions de visiteurs chaque année.
+Malheureusement, cette popularité croissante a mis en évidence les limites de la capacité d’accueil et la gestion difficile des flux touristiques de la ville, au grand désespoir des populations locales.
 Les **quartiers historiques** et les **sites emblématiques** sont souvent surchargés en période estivale, ce qui entraîne une détérioration de l'expérience touristique et un désagrément pour les locaux qui ont parfois du mal à circuler. 
 En tant que marseillais, nous le savons bien et le constatons chaque été, de nombreux sites sont réputés pour être saturés : *les Calanques de Cassis, Sugiton, Notre Dame de la Garde, Porquerolles, En-Vau,* etc… font face à une surfréquentation qui met en péril leur écosystème fragile et la qualité de vie des riverains.
 
 ![Site emblématique surchargé de touristes du monde entier](/assets/images/touristes-aux-catalans.jpg)
 
 ## Vers un tourisme responsable
+
 Les retombées économiques du tourisme sont indéniables, mais elles doivent être équilibrées avec la préservation de l’environnement et du tissu social. 
-Ainsi, la ville de Marseille doit trouver un équilibre entre développement économique et préservation de son identité et de la qualité de vie de ses habitants. Cela nécessite une **gestion efficace du tourisme** et une prise en compte des besoins et des préoccupations des résidents locaux : Pour palier à cette problématique, notre équipe a développé une app qui permettrait selon nous de mieux gérer ce sur-tourisme : [En savoir plus](https://www.truetourism.fr/store/)
+Ainsi, la ville de Marseille doit trouver un équilibre entre développement économique et préservation de son identité et de la qualité de vie de ses habitants.
+Cela nécessite une **gestion efficace du tourisme** et une prise en compte des besoins et des préoccupations des résidents locaux : Pour palier à cette problématique, notre équipe a développé une app qui permettrait selon nous de mieux gérer ce sur-tourisme : [En savoir plus.](https://www.truetourism.fr/store)
 
 

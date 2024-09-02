@@ -19,11 +19,7 @@ Pour permettre aux Marseillais de vivre pleinement les Jeux Olympiques, une fanz
 
 L'accueil des Jeux Olympiques à Marseille n'est pas seulement un honneur, mais aussi une occasion de mettre en valeur la richesse culturelle et sportive de notre ville. Avec des infrastructures modernes et un environnement idéal pour les sports nautiques et terrestres, Marseille s'affirme comme une destination incontournable pour les amateurs de sport du monde entier.
 
-<br>
-
 Chez True Tourism, nous sommes fiers de partager cette aventure olympique avec vous. Nos guides locaux, passionnés par leur ville, sont prêts à vous faire découvrir Marseille sous un nouvel angle, à travers des visites authentiques qui vous plongeront au cœur de l'histoire et de l'âme marseillaise. 
-
-<br>
 
 [Réservez votre visite guidée dès maintenant sur notre application et vivez l'expérience olympique à Marseille comme un véritable local.](https://www.truetourism.fr/store)
 

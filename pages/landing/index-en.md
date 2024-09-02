@@ -1,5 +1,6 @@
 ---
 title: Guided Tours in Marseille
+description: "Discover Marseille with True Tourism: authentic guided tours by passionate local guides. Explore, savor, and experience the local vibe."
 permalink: /visite-guidee-marseille
 lang: en
 page_id: landing

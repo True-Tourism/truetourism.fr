@@ -1,5 +1,6 @@
 ---
 title: Visita guiada a Marsella
+description: "Descubre Marsella con True Tourism: visitas guiadas auténticas por guías locales apasionados. Explora, saborea y vive la experiencia local."
 permalink: /visite-guidee-marseille
 lang: es
 page_id: landing
