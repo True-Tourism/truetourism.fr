@@ -1,4 +1,26 @@
-<section class="w-full flex flex-row items-center px-2 py-2 align-baseline break-words">
+<!--Réserver une visite-->
+<section class="w-full flex flex-col md:flex-row items-center p-8 align-baseline break-words">
+    <div class="flex-1 flex-col p-8">
+        <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
+            {{ site.data["home"].section-title-hero }}
+        </h2>
+        <p class="leading-relaxed text-base">
+            {{ site.data["home"].section-content-hero }}
+        </p>
+
+        {% include cta.html %}
+
+        {% include stores.html %}
+    </div>
+    <div class="flex flex-1">
+        <img
+                class="w-full rounded-xl"
+             src="/assets/images/path.png" >
+    </div>
+</section>
+
+<!--Un concepteur novateur-->
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words">
     <div class="flex-1 flex-col p-8">
         <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-1 }}
@@ -8,23 +30,25 @@
         </p>
     </div>
     <div class="flex flex-1 p-8 justify-center">
-            <img class="w-96 rounded-xl"
-                src="/assets/images/couvent-belle-de-mai.jpeg" alt="Heart Logo">
+        <img class="w-96 rounded-xl"
+             src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
 </section>
 
-<section class="w-full flex flex-col items-center px-2 py-48 align-baseline break-words bg-light">
+<!--Des prix pour tous les budgets-->
+<section class="w-full flex flex-col items-center p-8 align-baseline break-words bg-light">
     <h2 class="w-2/3 mx-auto px-2 py-2 text-3xl md:text-5xl font-bold text-center">
         {{ site.data["home"].section-title-2 }}
     </h2>
-    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-base">
+    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-center">
         {{ site.data["home"].section-content-2 }}
     </p>
 
     {% include cta.html %}
 </section>
 
-<section class="w-full flex flex-row items-center px-2 py-2 align-baseline break-words">
+<!--Thématiques-->
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words">
     <div class="flex-1 flex-col p-8">
         <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-3 }}
@@ -46,23 +70,25 @@
     </div>
     <div class="flex flex-1 p-8 justify-center">
         <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" alt="Heart Logo">
+             src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
 </section>
 
-<section class="w-full flex flex-col items-center px-2 py-2 align-baseline break-words">
+<!--Visiter et respecter-->
+<section class="w-full flex flex-col items-center p-8 align-baseline break-words bg-light">
     <h2 class="w-2/3 mx-auto px-2 py-2 text-3xl md:text-5xl font-bold text-center">
         {{ site.data["home"].section-title-4 }}
     </h2>
-    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-base">
+    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-justify">
         {{ site.data["home"].section-content-4 }}
     </p>
 </section>
 
-<section class="w-full flex flex-row items-center px-2 py-2 align-baseline break-words">
+<!--Nos valeurs-->
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words">
     <div class="flex flex-1 p-8 justify-center">
         <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" alt="Heart Logo">
+             src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
 
     <div class="flex-1 flex-col p-8">
@@ -84,16 +110,18 @@
     </div>
 </section>
 
-<section class="w-full flex flex-col items-center px-2 py-48 align-baseline break-words bg-light">
+<!--Qui sommes-nous ?-->
+<section class="w-full flex flex-col items-center p-8 align-baseline break-words bg-light">
     <h2 class="w-2/3 mx-auto px-2 py-2 text-3xl md:text-5xl font-bold text-center">
         {{ site.data["home"].section-title-6 }}
     </h2>
-    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-base">
+    <p class="w-3/5 lg:w-1/3 mx-auto leading-relaxed text-justify">
         {{ site.data["home"].section-content-6 }}
     </p>
 </section>
 
-<section class="w-full flex flex-row items-center px-2 py-2 align-baseline break-words">
+<!--Quels quartiers ne pas rater-->
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words">
     <div class="flex-1 flex-col p-8">
         <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-7 }}
@@ -111,15 +139,15 @@
 
     <div class="flex flex-1 p-8 justify-center">
         <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" alt="Heart Logo">
+             src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
 </section>
 
-
-<section class="w-full flex flex-row items-center px-2 py-2 align-baseline break-words">
+<!--Foire aux questions-->
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words bg-light">
     <div class="flex flex-1 p-8 justify-center">
         <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" alt="Heart Logo">
+             src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
 
     <div class="flex-1 flex-col p-8">
@@ -132,10 +160,10 @@
             <h3 class="text-lg title-font text-center md:text-left font-medium mb-1">
                 {{ item[0] }}
             </h3>
-        <p
-                class="leading-relaxed text-base">
-            {{ item[1] }}
-        </p>
+            <p
+                    class="leading-relaxed text-base">
+                {{ item[1] }}
+            </p>
         </div>
         {% endfor %}
     </div>

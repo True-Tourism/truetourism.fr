@@ -1,11 +1,14 @@
+section-title-hero: "Réserver une visite"
+section-content-hero: "Découvrez Marseille et Aix-en-Provence autrement avec True Tourism. Réservez une visite guidée authentique et unique, animée par des guides locaux passionnés. Explorez les trésors cachés, les quartiers emblématiques et les sites incontournables de la région. Vivez une expérience inoubliable et authentique avec True Tourism !"
+
 section-title-1: "Un concept novateur: L’alternative au tourisme de masse"
 section-content-1: "True Tourism est une application innovante dédiée à offrir des expériences de visite guidée uniques et authentiques à Aix-en-Provence et Marseille. Notre concept repose sur la mise en relation de visiteurs avec des guides touristiques locaux passionnés, qui connaissent leur ville comme leur poche. Que vous souhaitiez explorer les ruelles historiques, découvrir des trésors cachés ou déguster des spécialités locales, nous avons une visite guidée authentique adaptée à vos envies. Grâce à True Tourism, découvrez et rencontrez le guide local qui partage vos centres d’intérêt et saura vous transmettre sa passion !"
 
 section-title-2: "Des prix pour tous les budgets"
-section-content-2: "Les tarifs de nos diverses visites guidées sont fixés par les guides eux-mêmes, afin de leur laisser un maximum d’autonomie. Diverses gammes de prix sont disponibles !<br>Horaires: 8h-18h (derniers départs de visites à 18h)"
+section-content-2: "Les tarifs de nos diverses visites guidées sont fixés par les guides eux-mêmes, afin de leur laisser un maximum d’autonomie.<br> Différentes gammes de prix sont disponibles !<br>Horaires: 8h-18h (derniers départs des visites à 18h)"
 
-section-title-3: "Thématiques diverses"
-section-content-3: "Chez True Tourism, nous proposons une variété de visites thématiques pour satisfaire toutes les curiosités. Voici les différentes thématiques et leurs spécificités:"
+section-title-3: "Thématiques variées"
+section-content-3: "Chez True Tourism, nous proposons une variété de visites thématiques pour satisfaire toutes les curiosités:"
 section-items-3:
   "Visites historiques": "Plongez dans le passé de Marseille avec des visites qui retracent son histoire, ses monuments emblématiques et ses événements marquants. Découvrez les grandes époques et les personnages historiques qui ont façonné la ville."
   "Circuits anecdotiques": "Découvrez les histoires fascinantes et les anecdotes des locaux. Ces visites vous dévoilent les secrets, les légendes et les petites histoires des Marseillais, qui rendent Marseille unique et attachante."
@@ -17,7 +20,7 @@ section-items-3:
 section-outro-3: "Alors, quelle est la visite qui vous ressemble le plus ?"
 
 section-title-4: "Visiter et respecter"
-section-content-4: "Chez True Tourism, la protection de l'environnement et la préservation du patrimoine sont au cœur de nos préoccupations. Nos guides touristiques sensibilisent les visiteurs aux problématiques environnementales locales, en les incitant à respecter les règles et à adopter des comportements responsables. Lors de nos visites guidées dans les calanques, par exemple, nous mettons un point d'honneur à rappeler l'importance de préserver ces espaces naturels protégés. En choisissant de réserver une visite guidée avec True Tourism, vous contribuez à la sauvegarde de notre patrimoine et à la promotion d'un tourisme durable et respectueux."
+section-content-4: "La protection de l'environnement et la préservation du patrimoine sont au cœur de nos préoccupations. Nos guides touristiques sensibilisent les visiteurs aux problématiques environnementales locales, en les incitant à respecter les règles et à adopter des comportements responsables.<br>Lors de nos visites guidées dans les calanques, par exemple, nous mettons un point d'honneur à rappeler l'importance de préserver ces espaces naturels protégés.<br>En choisissant de réserver une visite guidée avec True Tourism, vous contribuez à la sauvegarde de notre patrimoine et à la promotion d'un tourisme durable et respectueux."
 
 section-title-5: "Nos valeurs"
 section-content-5: "Chez True Tourism, nous basons nos actions sur trois piliers:"
@@ -27,7 +30,7 @@ section-items-5:
   "L'accès à l'emploi": "Nous ne recherchons pas des CV, ni même des compétences particulières, ce que nous voulons, ce sont des personnalités uniques, avec des parcours de vie, des histoires et des expériences différentes. Chaque guide a son histoire et son parcours de vie, et c'est ce qui donne sa force et sa valeur à chacun des guides travaillant avec nous."
 
 section-title-6: "Qui sommes-nous ?"
-section-content-6: "Nous sommes une équipe de Marseillais passionnés, profondément amoureux de notre ville. Chez True Tourism, nous croyons fermement que la meilleure façon de découvrir Marseille et Aix-en-Provence est de le faire avec ceux qui y vivent et en connaissent les moindres recoins. Nos guides touristiques sont des locaux enthousiastes, prêts à partager leurs anecdotes, leurs secrets et leur amour pour leur région. Nous sommes fiers de contribuer à faire briller notre ville et de permettre à chacun de nos visiteurs de vivre une expérience authentique inoubliable."
+section-content-6: "Nous sommes une équipe de Marseillais passionnés, profondément amoureux de notre ville. Chez True Tourism, nous croyons fermement que la meilleure façon de découvrir Marseille et Aix-en-Provence est de le faire avec ceux qui y vivent et en connaissent les moindres recoins.<br>Nos guides touristiques sont des locaux, prêts à partager leurs anecdotes, leurs secrets et leur amour pour leur région.<br>Nous sommes fiers de contribuer à faire briller notre ville et de permettre à chacun de nos visiteurs de vivre une expérience authentique inoubliable."
 
 section-title-7: "Quels quartiers à ne pas rater"
 section-items-7:

@@ -582,6 +582,10 @@ video {
   visibility: visible;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -752,6 +756,10 @@ video {
   height: 100%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-36 {
   max-height: 9rem;
 }
@@ -800,12 +808,16 @@ video {
   width: 16rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-96 {
-  width: 24rem;
+.max-w-36 {
+  max-width: 9rem;
 }
 
 .flex-1 {
@@ -1090,11 +1102,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-48 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
 }
 
 .py-6 {
@@ -1439,6 +1446,10 @@ h6 {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:max-h-36 {
+    max-height: 9rem;
   }
 
   .md\:w-1\/2 {
