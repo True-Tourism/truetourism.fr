@@ -1,16 +1,16 @@
 <header class="bg-primary py-4">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-    <a class="text-2xl font-bold text-white hover:text-zinc-400"
+    <a class="text-2xl font-bold text-white hover:text-emerald-400"
        {% static_href %}href="/{% if site.default_lang != page.lang %}{{ page.lang }}{% endif %}"{% endstatic_href %}>TRUE TOURISM</a>
     <nav>
       <ul class="flex">
-        <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="{{ site.url }}/guides">
+        <li><a class="text-white hover:text-emerald-400 text-lg px-4" href="{{ site.url }}/guides">
           {{ site.data["index"].guides }}</a>
         </li>
-        <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="{{ site.url }}/posts">
+        <li><a class="text-white hover:text-emerald-400 text-lg px-4" href="{{ site.url }}/posts">
           {{ site.data["index"].posts }}</a>
         </li>
-        <li><a class="text-white hover:text-zinc-400 text-lg px-4" href="mailto:communication@truetourism.fr">
+        <li><a class="text-white hover:text-emerald-400 text-lg px-4" href="mailto:communication@truetourism.fr">
           {{ site.data["index"].contact }}</a>
         </li>
       </ul>
