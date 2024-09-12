@@ -7,10 +7,10 @@
 name: Deploy Jekyll site to Pages
 
 on:
-  # Tag on develop
+    # Create a tag to trigger deployment
     push:
-        branches: [develop]
-    # Merge to develop
+      tags: ['*']
+    # Build when merging into develop
     pull_request:
         branches: [develop]
         types: [closed]
