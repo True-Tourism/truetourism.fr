@@ -2,7 +2,7 @@
 title: "Que faire à Marseille en une journée ?"
 excerpt: "Marseille, avec son caractère **ensoleillé** et **animé**, regorge de surprises, et l'on peut facilement y trouver beaucoup d'activités à faire en 24 heures. Elle possède des quartiers historiques riches et des vues côtières époustouflantes qui restent à découvrir par les touristes et les voyageurs.Au cours de cette visite courte mais active, vous pourrez apprendre l'histoire de la ville, vous promener dans ses belles ruelles et profiter des plages magnifiques.
 "
-image: /assets/images/Somiou-001.jpeg
+image: /assets/images/Major-001.jpeg
 publish_date: 2024-09-15 
 lang: fr
 layout: post
