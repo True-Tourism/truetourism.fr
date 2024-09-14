@@ -1292,7 +1292,7 @@ video {
   transition-duration: 150ms;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, ul, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #000D46
 }
@@ -1361,11 +1361,6 @@ h6 {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-emerald-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
