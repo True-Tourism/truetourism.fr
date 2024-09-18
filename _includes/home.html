@@ -1,6 +1,6 @@
 <!--Réserver une visite-->
-<section class="w-full flex flex-col md:flex-row items-center p-8 align-baseline break-words">
-    <div class="flex-1 flex-col p-8">
+<section class="w-1/2 md:w-1/2 flex flex-col md:flex-row items-center p-8 pt-36 justify-between align-baseline break-words">
+    <div class="flex-1 flex-col p-8 items-center z-10 w-1/2">
         <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-hero }}
         </h2>
@@ -12,24 +12,24 @@
 
         {% include stores.html %}
     </div>
-    <div class="flex flex-1">
+    <div class="flex flex-1 absolute ml-96">
         <img
-                class="w-full rounded-xl"
+                class="w-2/3 ml-96 opacity-70"
              src="/assets/images/path.png" >
     </div>
 </section>
 
 <!--Un concepteur novateur-->
-<section class="w-full flex flex-row items-center p-8 align-baseline break-words">
-    <div class="flex-1 flex-col p-8">
-        <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold">
+<section class="w-full flex flex-row items-center p-8 align-baseline break-words mt-36 ">
+    <div class="flex-1 flex-col p-8 z-10">
+        <h2 class="w-full px-2 py-2 text-3xl md:text-5xl font-bold z-10">
             {{ site.data["home"].section-title-1 }}
         </h2>
         <p class="leading-relaxed text-base">
             {{ site.data["home"].section-content-1 }}
         </p>
     </div>
-    <div class="flex flex-1 p-8 justify-center">
+    <div class="flex flex-1 p-8 justify-center  z-10">
         <img class="w-96 rounded-xl"
              src="/assets/images/couvent-belle-de-mai.jpeg" >
     </div>
@@ -58,21 +58,44 @@
         </p>
 
         {% for item in site.data["home"].section-items-3 %}
-        <h3 class="text-lg title-font text-center md:text-left font-medium mb-1">
-            {{ item[0] }}
-        </h3>
-        <p class="leading-relaxed text-base">
-            {{ item[1] }}
-        </p>
+        <div class="mb-4">
+            <!-- Titre avec flèche cliquable -->
+            <h3 class="text-lg title-font text-center md:text-left font-medium mb-1 cursor-pointer flex items-center justify-between" onclick="toggleContent({{ forloop.index }})">
+                {{ item[0] }}
+                <span id="arrow-{{ forloop.index }}" class="transition-transform duration-300">
+                    &#9660; <!-- Flèche vers le bas par défaut -->
+                </span>
+            </h3>
+
+            <!-- Contenu dépliable -->
+            <p id="content-{{ forloop.index }}" class="leading-relaxed text-base hidden">
+                {{ item[1] }}
+            </p>
+        </div>
         {% endfor %}
 
         <p class="leading-relaxed text-base mt-2">{{ site.data.fr.home.section-outro-3 }}</p>
     </div>
     <div class="flex flex-1 p-8 justify-center">
-        <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" >
+        <img class="w-96 rounded-xl" src="/assets/images/couvent-belle-de-mai.jpeg">
     </div>
 </section>
+
+<script>
+    function toggleContent(index) {
+        const content = document.getElementById(`content-${index}`);
+        const arrow = document.getElementById(`arrow-${index}`);
+
+        // Toggle display between block and none
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        } else {
+            content.style.display = "block";
+            arrow.style.transform = "rotate(180deg)";
+        }
+    }
+</script>
 
 <!--Visiter et respecter-->
 <section class="w-full flex flex-col items-center p-8 align-baseline break-words bg-light">
@@ -147,7 +170,7 @@
 <section class="w-full flex flex-row items-center p-8 align-baseline break-words bg-light">
     <div class="flex flex-1 p-8 justify-center">
         <img class="w-96 rounded-xl"
-             src="/assets/images/couvent-belle-de-mai.jpeg" >
+             src="/assets/images/couvent-belle-de-mai.jpeg">
     </div>
 
     <div class="flex-1 flex-col p-8">
@@ -157,14 +180,37 @@
 
         {% for item in site.data["home"].section-items-8 %}
         <div class="flex flex-col w-full bg-white shadow-md rounded-lg p-8 mt-8 sm:mt-0 my-4 gap-4">
-            <h3 class="text-lg title-font text-center md:text-left font-medium mb-1">
+            <!-- Titre avec flèche cliquable -->
+            <h3 class="text-lg title-font text-center md:text-left font-medium mb-1 cursor-pointer flex items-center justify-between" onclick="toggleContent1({{ forloop.index }})">
                 {{ item[0] }}
+                <span id="arrow2-{{ forloop.index }}" class="transition-transform duration-300">
+                    &#9660; <!-- Flèche vers le bas par défaut -->
+                </span>
             </h3>
-            <p
-                    class="leading-relaxed text-base">
+
+            <!-- Contenu dépliable -->
+            <p id="content2-{{ forloop.index }}" class="leading-relaxed text-base hidden">
                 {{ item[1] }}
             </p>
         </div>
         {% endfor %}
     </div>
 </section>
+
+<script>
+    function toggleContent1(index) {
+        console.log(index);
+        const content = document.getElementById(`content2-${index}`);
+        const arrow = document.getElementById(`arrow2-${index}`);
+
+        // Toggle display between block and none
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        } else {
+            content.style.display = "block";
+            arrow.style.transform = "rotate(180deg)";
+        }
+    }
+</script>
+
