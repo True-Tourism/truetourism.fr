@@ -1,6 +1,10 @@
 <!-- Réserver une visite -->
-<section class="w-full flex flex-col md:flex-row items-center p-8 pt-36 justify-between bg-gray-50">
-    <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 pt-12 md:pt-22 2xl:px-96 justify-between bg-gray-50"
+>
+    <div
+        class="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-6"
+    >
         <h2 class="text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-hero }}
         </h2>
@@ -10,21 +14,25 @@
         <div class="w-full items-center">
             <!-- Call to Action and Stores -->
             <div class="flex flex-col md:flex-col gap-4">
-                {% include cta.html %}
-                {% include stores.html %}
+                {% include cta.html %} {% include stores.html %}
             </div>
         </div>
-
     </div>
 
     <!-- Image Section -->
     <div class="flex flex-1 justify-center relative">
-        <img class="w-3/4 opacity-80" src="/assets/images/path.png" alt="Path image">
+        <img
+            class="w-3/4 opacity-80"
+            src="/assets/images/path.png"
+            alt="Notre dame de la garde Marseille"
+        />
     </div>
 </section>
 
 <!-- Un concepteur novateur -->
-<section class="w-full flex flex-col md:flex-row items-center p-8 mt-16">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
     <div class="flex-1 flex flex-col space-y-4 text-center md:text-left">
         <h2 class="text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-1 }}
@@ -35,27 +43,31 @@
     </div>
 
     <div class="flex-1 flex justify-center mt-8 md:mt-0">
-        <img class="w-3/4 rounded-xl shadow-lg" src="/assets/images/couvent-belle-de-mai.jpeg" alt="Couvent Belle de Mai">
+        <img
+            class="w-3/4 rounded-xl shadow-lg"
+            src="/assets/images/somiou-001.jpeg"
+            alt="Calanques Somiou"
+        />
     </div>
 </section>
 
 <!-- Des prix pour tous les budgets -->
-<section class="w-full flex flex-col items-center p-8 mt-16 bg-light">
+<section class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-light">
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
         {{ site.data["home"].section-title-2 }}
     </h2>
-    <p class="w-full md:w-3/5 lg:w-1/2 leading-relaxed text-center mx-auto">
+    <p class="w-full lg:w-3/5 leading-relaxed text-center mx-auto">
         {{ site.data["home"].section-content-2 }}
     </p>
 
     <!-- Call to Action -->
-    <div class="mt-8">
-        {% include cta.html %}
-    </div>
+    <div class="mt-8">{% include cta.html %}</div>
 </section>
 
 <!-- Thématiques -->
-<section class="w-full flex flex-col md:flex-row items-start p-8 mt-16">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
     <div class="flex-1 space-y-6">
         <h2 class="text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-3 }}
@@ -67,9 +79,16 @@
         {% for item in site.data["home"].section-items-3 %}
         <div class="mb-6">
             <!-- Titre avec flèche cliquable -->
-            <h3 class="text-lg font-medium cursor-pointer flex justify-between items-center" onclick="toggleContent({{ forloop.index }}, 'arrow', 'content')">
+            <h3
+                class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                onclick="toggleContent({{ forloop.index }}, 'arrow', 'content')"
+            >
                 {{ item[0] }}
-                <span id="arrow-{{ forloop.index }}" class="transition-transform duration-300">&#9660;</span>
+                <span
+                    id="arrow-{{ forloop.index }}"
+                    class="transition-transform duration-300"
+                    >&#9660;</span
+                >
             </h3>
             <!-- Contenu dépliable -->
             <p id="content-{{ forloop.index }}" class="leading-relaxed hidden">
@@ -78,28 +97,42 @@
         </div>
         {% endfor %}
 
-        <p class="leading-relaxed mt-4">{{ site.data.fr.home.section-outro-3 }}</p>
+        <p class="leading-relaxed mt-4">
+            {{ site.data.fr.home.section-outro-3 }}
+        </p>
     </div>
 
     <div class="flex-1 flex justify-center mt-8 md:mt-0">
-        <img class="w-3/4 rounded-xl shadow-lg" src="/assets/images/couvent-belle-de-mai.jpeg" alt="Couvent Belle de Mai">
+        <img
+            class="w-3/4 rounded-xl shadow-lg"
+            src="/assets/images/visite-naturopathe.jpeg"
+            alt="Visite naturopathe"
+        />
     </div>
 </section>
 
 <!-- Visiter et respecter -->
-<section class="w-full flex flex-col items-center p-8 mt-16 bg-gray-100">
+<section
+    class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-gray-100"
+>
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
         {{ site.data["home"].section-title-4 }}
     </h2>
-    <p class="w-full md:w-3/5 lg:w-1/2 text-center leading-relaxed">
+    <p class="w-full lg:w-3/5 leading-relaxed">
         {{ site.data["home"].section-content-4 }}
     </p>
 </section>
 
 <!-- Nos valeurs -->
-<section class="w-full flex flex-col md:flex-row items-start p-8 mt-16">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
     <div class="flex-1 flex justify-center">
-        <img class="w-3/4 rounded-xl shadow-lg" src="/assets/images/couvent-belle-de-mai.jpeg" alt="Couvent Belle de Mai">
+        <img
+            class="w-3/4 rounded-xl shadow-lg"
+            src="/assets/images/couvent-belle-de-mai.jpeg"
+            alt="Couvent Belle de Mai"
+        />
     </div>
 
     <div class="flex-1 space-y-6 mt-8 md:mt-0">
@@ -117,17 +150,21 @@
 </section>
 
 <!-- Qui sommes-nous ? -->
-<section class="w-full flex flex-col items-center p-8 mt-16 bg-gray-50">
+<section
+    class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-gray-50"
+>
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
         {{ site.data["home"].section-title-6 }}
     </h2>
-    <p class="w-full md:w-3/5 lg:w-1/2 leading-relaxed text-center">
+    <p class="w-full lg:w-3/5 leading-relaxed">
         {{ site.data["home"].section-content-6 }}
     </p>
 </section>
 
 <!-- Quels quartiers ne pas rater -->
-<section class="w-full flex flex-col md:flex-row items-start p-8 mt-16">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
     <div class="flex-1 space-y-6">
         <h2 class="text-3xl md:text-5xl font-bold">
             {{ site.data["home"].section-title-7 }}
@@ -142,14 +179,24 @@
     </div>
 
     <div class="flex-1 flex justify-center mt-8 md:mt-0">
-        <img class="w-3/4 rounded-xl shadow-lg" src="/assets/images/couvent-belle-de-mai.jpeg" alt="Couvent Belle de Mai">
+        <img
+            class="w-3/4 rounded-xl shadow-lg"
+            src="/assets/images/panier.jpeg"
+            alt="Le Panier à Marseille"
+        />
     </div>
 </section>
 
 <!-- Foire aux questions -->
-<section class="w-full flex flex-col md:flex-row items-start p-8 mt-16 bg-gray-100">
+<section
+    class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96 bg-gray-100"
+>
     <div class="flex-1 flex justify-center">
-        <img class="w-3/4 rounded-xl shadow-lg" src="/assets/images/couvent-belle-de-mai.jpeg" alt="Couvent Belle de Mai">
+        <img
+            class="w-3/4 rounded-xl shadow-lg"
+            src="/assets/images/crop_email.png"
+            alt="Foire aux questions"
+        />
     </div>
 
     <div class="flex-1 space-y-6 mt-8 md:mt-0">
@@ -160,9 +207,16 @@
         {% for item in site.data["home"].section-items-8 %}
         <div class="flex flex-col w-full bg-white shadow-md rounded-lg p-6">
             <!-- Titre avec flèche cliquable -->
-            <h3 class="text-lg font-medium cursor-pointer flex justify-between items-center" onclick="toggleContent({{ forloop.index }}, 'arrow2', 'content2')">
+            <h3
+                class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                onclick="toggleContent({{ forloop.index }}, 'arrow2', 'content2')"
+            >
                 {{ item[0] }}
-                <span id="arrow2-{{ forloop.index }}" class="transition-transform duration-300">&#9660;</span>
+                <span
+                    id="arrow2-{{ forloop.index }}"
+                    class="transition-transform duration-300"
+                    >&#9660;</span
+                >
             </h3>
             <!-- Contenu dépliable -->
             <p id="content2-{{ forloop.index }}" class="leading-relaxed hidden">
