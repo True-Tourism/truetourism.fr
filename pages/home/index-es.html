@@ -1,0 +1,58 @@
+---
+title: True Tourism - La buena manera de visitar
+lang: es
+permalink: /
+page_id: home
+---
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>{{ page.title }}</title>
+    <meta name="description"
+          content="True Tourism es una plataforma de reserva en línea para visitas guiadas y actividades turísticas. Ofrecemos visitas guiadas, actividades y experiencias únicas en todo el mundo. Reserve directamente con guías locales y agencias de viajes">
+
+    <meta name="keywords"
+          content="true, trourism, tourisme, marseille, sud, bonne, façon, visiter, visite, visite guidée, personnalisée, thème, randonné, guide, guide touristique, locaux, passionné, application, mobile, android, ios, apple, google, play store, app store">
+    <meta name="author" content="True Tourism">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#00B382">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://www.truetourism.fr/favicon.ico" type="image/x-icon"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11220824775"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11220824775');
+    </script>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/css/animation.css" rel="stylesheet">
+
+    <script defer src="/js/animation.js"></script>
+
+    {% seo %}
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+{% include header.html %}
+
+{% include home.html %}
+
+{% include footer.html %}
+
+</body>
+</html>

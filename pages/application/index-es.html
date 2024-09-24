@@ -1,8 +1,8 @@
 ---
 title: True Tourism - La buena manera de visitar
+permalink: /application
 lang: es
-permalink: /
-page_id: home
+page_id: application
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -42,7 +42,6 @@ page_id: home
     <link href="/css/animation.css" rel="stylesheet">
 
     <script defer src="/js/animation.js"></script>
-    <script defer src="/js/language.js"></script>
 
     {% seo %}
 </head>
@@ -104,7 +103,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 class="text-lg title-font text-center md:text-left font-medium mb-3" id="title-1">{{ site.data["index"].title-1 }}</h2>
+                    <h2 class="text-lg title-font text-center md:text-left font-medium mb-3" id="title-1">{{
+                        site.data["index"].title-1 }}</h2>
                     <p class="leading-relaxed text-base" id="description-1">{{ site.data["index"].description-1 }}</p>
                 </div>
             </div>
@@ -116,7 +116,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 id="title-2" class="text-lg title-font text-center md:text-left font-medium mb-3">{{ site.data["index"].title-2 }}</h2>
+                    <h2 id="title-2" class="text-lg title-font text-center md:text-left font-medium mb-3">{{
+                        site.data["index"].title-2 }}</h2>
                     <p class="leading-relaxed text-base" id="description-2">{{ site.data["index"].description-2 }}</p>
                 </div>
             </div>
@@ -128,7 +129,8 @@ page_id: home
                     </div>
                 </div>
                 <div class="flex-grow">
-                    <h2 id="title-3" class="text-lg title-font text-center md:text-left font-medium mb-3">{{ site.data["index"].title-3 }}</h2>
+                    <h2 id="title-3" class="text-lg title-font text-center md:text-left font-medium mb-3">{{
+                        site.data["index"].title-3 }}</h2>
                     <p class="leading-relaxed text-base" id="description-3">{{ site.data["index"].description-3 }}</p>
                 </div>
             </div>
@@ -154,50 +156,6 @@ page_id: home
         </div>
     </div>
 </section>
-
-<!-- FAQ
-<section class="bg-gray-100 py-8">
-    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800 animated-hidden">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">FAQ</h2>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-col justify-center items-center pt-8 my-12 sm:my-4">
-
-            <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
-                <div class="flex flex-wrap w-full">
-                    <div class="w-full p-3">
-                        <div class="bg-white shadow-md rounded-lg p-5">
-                            <div class="flex flex-col md:flex-row justify-between items-center">
-                                <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment ça fonctionne ?</h2>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed mt-2">Pour utiliser True Tourism, il suffit de
-                                télécharger l'application depuis l'App Store ou le Play Store, et de créer un compte.
-                                Ensuite, vous pouvez parcourir les visites disponibles et réserver celle qui vous
-                                intéresse.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap w-5/6 -mx-1 justify-center animated-hidden animated-element">
-                <div class="flex flex-wrap w-full">
-                    <div class="w-full  p-3">
-                        <div class="bg-white shadow-md rounded-lg p-5">
-                            <div class="flex flex-col md:flex-row justify-between items-center">
-                                <h2 class="text-gray-900 font-medium text-lg mb-2 md:mb-0">Comment devenir guide ?</h2>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed mt-2">Pour devenir guide, il suffit de créer un
-                                compte sur l'application, et de renseigner les informations sur votre profil. Vous
-                                pouvez ensuite commencer à proposer vos visites sur mesures dans l'application.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
 
 {% include footer.html %}
 
