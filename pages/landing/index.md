@@ -12,7 +12,7 @@ image: /assets/images/balade-calanques.jpeg
 
 ## Pourquoi découvrir Marseille avec un guide touristique ?
 
-{% include cta.html %}
+{% include cta_small.html %}
 
 Marseille, la plus ancienne ville de France, regorge de trésors cachés et d'histoires fascinantes. **Visiter Marseille** avec un **guide touristique** offre une expérience enrichissante qui va bien au-delà des simples sites touristiques.
 

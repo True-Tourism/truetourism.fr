@@ -12,7 +12,7 @@ image: /assets/images/balade-calanques.jpeg
 
 ## Why discover Marseille with a tour guide?
 
-{% include cta.html %}
+{% include cta_small.html %}
 
 **Marseille**, the oldest city in France, is filled with **hidden treasures** and **fascinating stories**. Visiting Marseille with a **tour guide** offers a **rich experience** that goes far beyond simple sightseeing.
 

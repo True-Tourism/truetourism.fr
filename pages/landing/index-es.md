@@ -12,7 +12,7 @@ image: /assets/images/malmousque.jpeg
 
 ## ¿Por qué descubrir Marsella con un guía turístico?
 
-{% include cta.html %}
+{% include cta_small.html %}
 
 Marsella, la ciudad más antigua de Francia, está llena de **tesoros ocultos** e **historias fascinantes**. Visitar Marsella con un guía ofrece una experiencia rica que va mucho más allá del simple turismo.
 
