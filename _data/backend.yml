@@ -1,3 +1,4 @@
 development: "local.functions.nhost.run"
 uat: "ktguqgpiphnodsetxsdx.functions.eu-central-1.nhost.run"
-production: "wovnitykmnyslxnofpvc.functions.eu-central-1.nhost.run"
+production: "ktguqgpiphnodsetxsdx.functions.eu-central-1.nhost.run"
+_production: "wovnitykmnyslxnofpvc.functions.eu-central-1.nhost.run"
