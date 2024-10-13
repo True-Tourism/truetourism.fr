@@ -8,16 +8,11 @@ name: Deploy Jekyll site to Pages
 
 on:
     # Create a tag to trigger deployment
+    # Build when committing to develop
     push:
       tags: ['**']
-    # Build when merging into develop
-    pull_request:
-        branches: [develop]
-        types: [closed]
-
-  # Allows you to run this workflow manually from the Actions tab
-  #  workflow_dispatch:
-
+      branches:
+        - develop
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -34,7 +29,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true || startsWith(github.event.ref, 'refs/tags/')
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/develop')
+      || startsWith(github.event.ref, 'refs/tags/')
     steps:
       - name: Checkout
         uses: actions/checkout@v4
