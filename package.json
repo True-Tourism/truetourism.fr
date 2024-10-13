@@ -7,6 +7,8 @@
   "scripts": {
     "test": "jest _tests",
     "tailwind": "tailwindcss -i ./css/input.css -o ./dist/output.css --watch",
-    "jekyll": "bundle exec jekyll serve"
+    "jekyll": "bundle exec jekyll serve",
+    "jekyll:uat": "JEKYLL_ENV=uat npm run jekyll",
+    "jekyll:prod": "JEKYLL_ENV=production npm run jekyll"
   }
 }

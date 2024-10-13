@@ -1,0 +1,209 @@
+<!-- Offrez une expérience unique à vos collaborateurs -->
+<section
+        class="w-full flex flex-col md:flex-row items-center p-8 pt-12 md:pt-22 2xl:px-96 justify-between bg-gray-50"
+>
+    <div
+            class="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-6"
+    >
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-hero }}
+        </h2>
+        <p class="leading-relaxed text-base">
+            {{ site.data["companies"].section-content-hero }}
+        </p>
+    </div>
+</section>
+
+<!-- Nos offres pour les entreprises -->
+<section
+        class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
+    <div class="flex-1 flex flex-col space-y-4 text-center md:text-left">
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-1 }}
+        </h2>
+
+        {% for item in site.data["companies"].section-items-1 %}
+        <div class="mb-6">
+            <!-- Titre avec flèche cliquable -->
+            <h3
+                    class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                    onclick="toggleContent({{ forloop.index }}, 'arrow-items-1', 'content-items-1')"
+            >
+                {{ item[0] }}
+                <span
+                        id="arrow-items-1-{{ forloop.index }}"
+                        class="transition-transform duration-300"
+                >&#9660;</span
+                >
+            </h3>
+            <!-- Contenu dépliable -->
+            <p id="content-items-1-{{ forloop.index }}" class="leading-relaxed hidden">
+                {{ item[1] }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="flex-1 flex justify-center mt-8 md:mt-0">
+        <img
+                class="w-3/4 rounded-xl shadow-lg"
+                src="/assets/images/evenement.jpg"
+                alt="Evenement d'entreprise"
+        />
+    </div>
+</section>
+
+
+<!-- Form -->
+<section class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-light">
+    <div class="flex-1 space-y-6">
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-3 }}
+        </h2>
+        <p class="leading-relaxed text-base mb-4">
+            {{ site.data["companies"].section-content-3 }}
+        </p>
+    </div>
+
+    <div class="flex-1 flex justify-center mt-8 md:mt-0">
+        {% include visit-form-company.html %}
+    </div>
+</section>
+
+<!-- Bénéfices pour votre entreprise -->
+<section
+        class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
+
+    <div class="flex-1 flex justify-center mt-8 md:mt-0">
+        <img
+                class="w-3/4 rounded-xl shadow-lg"
+                src="/assets/images/visite-live-for-good.jpeg"
+                alt="Visite guidée d'entreprise"
+        />
+    </div>
+
+
+    <div class="flex-1 flex flex-col space-y-4 text-center md:text-left">
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-2 }}
+        </h2>
+
+        <div class="flex-1 flex flex-col justify-center mt-8 md:mt-0">
+            {% for item in site.data["companies"].section-items-2 %}
+            <div class="mb-6">
+                <!-- Titre avec flèche cliquable -->
+                <h3
+                        class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent({{ forloop.index }}, 'arrow-items-2', 'content-items-2')"
+                >
+                    {{ item[0] }}
+                    <span
+                            id="arrow-items-2-{{ forloop.index }}"
+                            class="transition-transform duration-300"
+                    >&#9660;</span
+                    >
+                </h3>
+                <!-- Contenu dépliable -->
+                <p id="content-items-2-{{ forloop.index }}" class="leading-relaxed hidden">
+                    {{ item[1] }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Nos valeurs -->
+<section
+        class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-gray-100"
+>
+    <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
+        {{ site.data["companies"].section-title-4 }}
+    </h2>
+    <p class="w-full lg:w-3/5 leading-relaxed">
+        {{ site.data["companies"].section-content-4 }}
+    </p>
+
+    <div class="flex flex-col space-y-6 mt-8">
+        <h3 class="text-2xl font-bold">
+            {{ site.data["companies"].section-items-label-4 }}
+        </h3>
+
+        {% for item in site.data["companies"].section-items-4 %}
+        <div class="mb-6">
+            <h3
+                    class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                    onclick="toggleContent({{ forloop.index }}, 'arrow-items-4', 'content-items-4')"
+            >
+                {{ item[0] }}
+                <span
+                        id="arrow-items-4-{{ forloop.index }}"
+                        class="transition-transform duration-300"
+                >&#9660;</span
+                >
+            </h3>
+            <!-- Contenu dépliable -->
+            <p id="content-items-4-{{ forloop.index }}" class="leading-relaxed hidden">
+                {{ item[1] }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Foire aux questions -->
+<section
+        class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96 bg-gray-100"
+>
+    <div class="flex-1 flex justify-center">
+        <img
+                class="w-3/4 rounded-xl shadow-lg"
+                src="/assets/images/port-marseille.jpeg"
+                alt="Port de Marseille"
+        />
+    </div>
+
+    <div class="flex-1 space-y-6 mt-8 md:mt-0">
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-5 }}
+        </h2>
+
+        {% for item in site.data["companies"].section-items-5 %}
+        <div class="flex flex-col w-full bg-white shadow-md rounded-lg p-6">
+            <!-- Titre avec flèche cliquable -->
+            <h3
+                    class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                    onclick="toggleContent({{ forloop.index }}, 'arrow-items-5', 'content-items-5')"
+            >
+                {{ item[0] }}
+                <span
+                        id="arrow-items-5-{{ forloop.index }}"
+                        class="transition-transform duration-300"
+                >&#9660;</span
+                >
+            </h3>
+            <!-- Contenu dépliable -->
+            <p id="content-items-5-{{ forloop.index }}" class="leading-relaxed hidden">
+                {{ item[1] }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<script>
+  function toggleContent(index, arrowIdPrefix, contentIdPrefix) {
+    const content = document.getElementById(`${contentIdPrefix}-${index}`);
+    const arrow = document.getElementById(`${arrowIdPrefix}-${index}`);
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      content.style.display = "block";
+      arrow.style.transform = "rotate(180deg)";
+    }
+  }
+</script>
