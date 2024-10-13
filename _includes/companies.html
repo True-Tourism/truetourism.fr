@@ -48,44 +48,15 @@
     <div class="flex-1 flex justify-center mt-8 md:mt-0">
         <img
                 class="w-3/4 rounded-xl shadow-lg"
-                src="/assets/images/somiou-001.jpeg"
-                alt="Calanques Somiou"
+                src="/assets/images/evenement.jpg"
+                alt="Evenement d'entreprise"
         />
     </div>
 </section>
 
-<!-- Bénéfices pour votre entreprise -->
+
+<!-- Form -->
 <section class="w-full flex flex-col items-center p-8 mt-16 2xl:px-96 bg-light">
-    <h2 class="text-3xl md:text-5xl font-bold text-center mb-6">
-        {{ site.data["companies"].section-title-2 }}
-    </h2>
-
-    {% for item in site.data["companies"].section-items-2 %}
-    <div class="mb-6">
-        <!-- Titre avec flèche cliquable -->
-        <h3
-                class="text-lg font-medium cursor-pointer flex justify-between items-center"
-                onclick="toggleContent({{ forloop.index }}, 'arrow-items-2', 'content-items-2')"
-        >
-            {{ item[0] }}
-            <span
-                    id="arrow-items-2-{{ forloop.index }}"
-                    class="transition-transform duration-300"
-            >&#9660;</span
-            >
-        </h3>
-        <!-- Contenu dépliable -->
-        <p id="content-items-2-{{ forloop.index }}" class="leading-relaxed hidden">
-            {{ item[1] }}
-        </p>
-    </div>
-    {% endfor %}
-</section>
-
-<!-- Offrir une expérience unique -->
-<section
-        class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
->
     <div class="flex-1 space-y-6">
         <h2 class="text-3xl md:text-5xl font-bold">
             {{ site.data["companies"].section-title-3 }}
@@ -96,9 +67,51 @@
     </div>
 
     <div class="flex-1 flex justify-center mt-8 md:mt-0">
-        <h3 class="text-2xl font-bold text-center text-red-500">
-            #TODO: cta form
-        </h3>
+        {% include visit-form-company.html %}
+    </div>
+</section>
+
+<!-- Bénéfices pour votre entreprise -->
+<section
+        class="w-full flex flex-col md:flex-row items-center p-8 mt-16 2xl:px-96"
+>
+
+    <div class="flex-1 flex justify-center mt-8 md:mt-0">
+        <img
+                class="w-3/4 rounded-xl shadow-lg"
+                src="/assets/images/visite-live-for-good.jpeg"
+                alt="Visite guidée d'entreprise"
+        />
+    </div>
+
+
+    <div class="flex-1 flex flex-col space-y-4 text-center md:text-left">
+        <h2 class="text-3xl md:text-5xl font-bold">
+            {{ site.data["companies"].section-title-2 }}
+        </h2>
+
+        <div class="flex-1 flex flex-col justify-center mt-8 md:mt-0">
+            {% for item in site.data["companies"].section-items-2 %}
+            <div class="mb-6">
+                <!-- Titre avec flèche cliquable -->
+                <h3
+                        class="text-lg font-medium cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent({{ forloop.index }}, 'arrow-items-2', 'content-items-2')"
+                >
+                    {{ item[0] }}
+                    <span
+                            id="arrow-items-2-{{ forloop.index }}"
+                            class="transition-transform duration-300"
+                    >&#9660;</span
+                    >
+                </h3>
+                <!-- Contenu dépliable -->
+                <p id="content-items-2-{{ forloop.index }}" class="leading-relaxed hidden">
+                    {{ item[1] }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
 
@@ -138,8 +151,6 @@
         </div>
         {% endfor %}
     </div>
-
-    <h4 class="text-red-500">#TODO: alternative cta</h4>
 </section>
 
 <!-- Foire aux questions -->
@@ -149,8 +160,8 @@
     <div class="flex-1 flex justify-center">
         <img
                 class="w-3/4 rounded-xl shadow-lg"
-                src="/assets/images/crop_email.png"
-                alt="Foire aux questions"
+                src="/assets/images/port-marseille.jpeg"
+                alt="Port de Marseille"
         />
     </div>
 

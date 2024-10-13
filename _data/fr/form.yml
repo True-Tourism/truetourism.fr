@@ -1,0 +1,9 @@
+company-name: "Nom de l'entreprise"
+contact-email: "E-mail de contact"
+date: "Date"
+email: "Adresse e-mail"
+message: "Message"
+optional: "Optionnel"
+participants: "Nombre de participants"
+
+company-form-message-placeholder: "Vous pouvez préciser votre demande ici.&NewLine;Quels quartiers souhaitez-vous visiter ?&NewLine;Avez-déjà identifié un guide qui vous intéresse ?"
