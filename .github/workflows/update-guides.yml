@@ -1,0 +1,43 @@
+name: Update Guide Profiles
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  update-guides:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Run guide profile update script
+        env:
+          NHOST_GRAPHQL_URL: ${{ vars.NHOST_GRAPHQL_URL }}
+          HASURA_GRAPHQL_ADMIN_SECRET: ${{ secrets.HASURA_GRAPHQL_ADMIN_SECRET }}
+        run: |
+          chmod +x _scripts/guides.sh
+          ./_scripts/guides.sh
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git status
+          git add _guides/*.md
+          if ! git diff-index --quiet HEAD; then
+            echo -e "\033[0;32mCommitting changes\033[0m"
+            git commit -m "Automated update of guide profiles"
+            git status
+            echo -e "\033[0;32mPushing changes\033[0m"
+            git push
+          else
+            echo -e "\033[0;31mNo changes to commit\033[0m"
+          fi
