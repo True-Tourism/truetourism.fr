@@ -3,7 +3,7 @@ name: Update Guide Profiles
 on:
   push:
     branches:
-      - workflow/update-guides
+      - develop
   schedule:
     - cron: '0 0 * * *'
 

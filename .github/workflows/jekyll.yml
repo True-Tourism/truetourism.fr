@@ -7,12 +7,16 @@
 name: Deploy Jekyll site to Pages
 
 on:
-    # Create a tag to trigger deployment
-    # Build when committing to develop
-    push:
-      tags: ['**']
-      branches:
-        - develop
+  workflow_run:
+    workflows: [ "Update Guide Profiles" ]
+    types:
+      - completed
+  # Create a tag to trigger deployment
+  # Build when committing to develop
+  push:
+    tags: ['**']
+    #branches:
+    #  - develop
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
