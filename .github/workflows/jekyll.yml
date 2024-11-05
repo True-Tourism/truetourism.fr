@@ -7,6 +7,13 @@
 name: Deploy Jekyll site to Pages
 
 on:
+  workflow_run:
+    # Update guide profiles before deploying
+    workflows: ["Update Guide Profiles"]
+    branches: [develop]
+    types:
+      - completed
+
     # Create a tag to trigger deployment
     # Build when committing to develop
     push:
