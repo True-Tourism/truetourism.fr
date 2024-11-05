@@ -3,7 +3,7 @@ name: Update Guide Profiles
 on:
   push:
     branches:
-      - develop
+      - workflow/update-guides
 
 jobs:
   update-guides:
